@@ -90,7 +90,7 @@ gulp.task('browser-sync', function(){
 
 /*Синхронизация*/
 gulp.task('watch', ['browser-sync', 'jade', 'css-libs', 'scripts'], function(){
-	gulp.watch('app/sass/*.sass', ['sass']);
+	gulp.watch('app/sass/**/*.sass', ['sass']);
 	gulp.watch('app/css/libs/*.sass', ['css-libs']);
 	gulp.watch('app/jade/**/*.jade', ['jade']);
 	gulp.watch('app/*.html', browserSync.reload);
