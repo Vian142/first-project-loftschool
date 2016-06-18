@@ -50,6 +50,24 @@ $(document).ready(function() {
 	$(window).resize(function() {
 		heightDetect();
 	});
+
+	// Кнопка меню
+$(".btn-sandwitch").click(function() {
+  $(".btn-sandwitch__toggle").toggleClass("active");
+});
+$(".nav-list__item__link").click(function(){
+	$(".wrap-navigation").fadeOut(600);
+	$(".btn-sandwitch__toggle").toggleClass("active");
+});
+
+// Появление меню
+$(".btn-sandwitch").click(function(){
+	if ($(".wrap-navigation").is(":visible")){
+		$(".wrap-navigation").fadeOut(400);
+	} else {
+		$(".wrap-navigation").fadeIn(200);
+	};
+});
 });
 
 $(window).load(function() {

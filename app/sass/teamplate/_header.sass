@@ -21,7 +21,8 @@
 	top: 25px
 	right: 30px
 	border: 0
-	background: none	
+	background: none
+	z-index: 40
 .btn-sandwitch__toggle
 	display: block
 	height: 45px
@@ -42,6 +43,7 @@
 	border-radius: 10px
 	position: relative
 	display: block
+	margin: 0 auto
 .sw-top
 	top: 5px
 .sw-middle
@@ -53,21 +55,23 @@
 
 // Блок меню.
 .wrap-navigation
+	display: none
 	position: fixed
-	display: table
 	top: 0
 	left: 0
 	height: 100%
 	width: 100%
-	&.hidden
-		display: none
+	z-index: 30
 .main-nav
-	display: table-row
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
 	background-color: rgba(24,54,105, 0.87)
 .nav-list
-	display: table-cell
 	vertical-align: middle
-	padding: 0
+	padding-top: 6%
 	margin: 0
 .nav-list__item
 	width: 100%
