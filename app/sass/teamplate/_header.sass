@@ -14,26 +14,64 @@
 	color: #ffffff
 /*-----*/
 
+/* Кнопка гамбургер */
+.btn-sandwitch
+	position: fixed
+	padding: 0
+	top: 25px
+	right: 30px
+	border: 0
+	background: none	
+.btn-sandwitch__toggle
+	display: block
+	height: 45px
+	width: 45px
+	&.active
+		.sw-top
+			top: 19px
+			transform: rotate(140deg)
+		.sw-middle
+			opacity: 0
+		.sw-bottom
+			top: 9px
+			transform: rotate(-140deg)
+.sw-line
+	height: 5px
+	width: 40px
+	background-color: #FFF
+	border-radius: 10px
+	position: relative
+	display: block
+.sw-top
+	top: 5px
+.sw-middle
+	top: 15px
+.sw-bottom
+	top: 25px
 
 
 
 // Блок меню.
-.main-nav
-	position: absolute
+.wrap-navigation
+	position: fixed
+	display: table
 	top: 0
-	right: 0
+	left: 0
 	height: 100%
 	width: 100%
-	display: table-cell
-	vertical-align: middle
+	&.hidden
+		display: none
+.main-nav
+	display: table-row
 	background-color: rgba(24,54,105, 0.87)
 .nav-list
-	display: inline-block
+	display: table-cell
+	vertical-align: middle
 	padding: 0
-	height: 100%
-	width: 100%
+	margin: 0
 .nav-list__item
 	width: 100%
+	list-style: none
 .nav-list__item__link
 	display: block
 	width: 100%
@@ -60,10 +98,6 @@
 			opacity: 1
 			width: 89px
 /*-----*/
-
-
-
-
 
 
 

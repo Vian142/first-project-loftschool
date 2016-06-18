@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/OpenSans/OpenSans-Regular-webfont.eot");
@@ -112,24 +113,73 @@ h2 {
   color: #ffffff; }
 
 /*-----*/
-.main-nav {
-  position: absolute;
+/* Кнопка гамбургер */
+.btn-sandwitch {
+  position: fixed;
+  padding: 0;
+  top: 25px;
+  right: 30px;
+  border: 0;
+  background: none; }
+
+.btn-sandwitch__toggle {
+  display: block;
+  height: 45px;
+  width: 45px; }
+  .btn-sandwitch__toggle.active .sw-top {
+    top: 19px;
+    -webkit-transform: rotate(140deg);
+        -ms-transform: rotate(140deg);
+            transform: rotate(140deg); }
+  .btn-sandwitch__toggle.active .sw-middle {
+    opacity: 0; }
+  .btn-sandwitch__toggle.active .sw-bottom {
+    top: 9px;
+    -webkit-transform: rotate(-140deg);
+        -ms-transform: rotate(-140deg);
+            transform: rotate(-140deg); }
+
+.sw-line {
+  height: 5px;
+  width: 40px;
+  background-color: #FFF;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  position: relative;
+  display: block; }
+
+.sw-top {
+  top: 5px; }
+
+.sw-middle {
+  top: 15px; }
+
+.sw-bottom {
+  top: 25px; }
+
+.wrap-navigation {
+  position: fixed;
+  display: table;
   top: 0;
-  right: 0;
+  left: 0;
   height: 100%;
-  width: 100%;
-  display: table-cell;
-  vertical-align: middle;
+  width: 100%; }
+  .wrap-navigation.hidden {
+    display: none; }
+
+.main-nav {
+  display: table-row;
   background-color: rgba(24, 54, 105, 0.87); }
 
 .nav-list {
-  display: inline-block;
+  display: table-cell;
+  vertical-align: middle;
   padding: 0;
-  height: 100%;
-  width: 100%; }
+  margin: 0; }
 
 .nav-list__item {
-  width: 100%; }
+  width: 100%;
+  list-style: none; }
 
 .nav-list__item__link {
   display: block;
