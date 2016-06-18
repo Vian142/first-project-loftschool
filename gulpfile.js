@@ -4,6 +4,7 @@ var gulp = require('gulp'),
 		concat = require('gulp-concat'),
 		uglify = require('gulp-uglifyjs'),
 		cssnano = require('gulp-cssnano'),
+		jade = require('gulp-jade'),
 		rename = require('gulp-rename'),
 		imagemin = require('gulp-imagemin'),
 		image = require('gulp-image'),
@@ -14,7 +15,20 @@ var gulp = require('gulp'),
 		autoprefixer = require('gulp-autoprefixer');
 
 
-/*	sass=> css, добавление префиксов, вывод в css */
+
+
+// чтобы запустить эту задачу, наберите в командной строке gulp jade
+gulp.task('jade', function() {
+    gulp.src('app/jade/*.jade')
+        .pipe(jade({
+            pretty: true
+        }))
+        .on('error', console.log) // Если есть ошибки, выводим и продолжаем
+    .pipe(gulp.dest('app/')); // Записываем собранные файлы
+}); 
+
+
+
 gulp.task('sass', function(){
 	return gulp.src('app/sass/*.+(sass|scss)')
 	.pipe(sass())
@@ -22,25 +36,6 @@ gulp.task('sass', function(){
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.reload({stream:true}))
 });
-
-
-/*Минификация css-библиотек и добавление суффикса .min */
-// gulp.task('css-libs', function(){
-// 	return gulp.src('app/css/libs/**/*')
-// 	.pipe(cssnano())
-// 	.pipe(rename({
-// 		basename: 'libs',
-// 		suffix: '.min',
-// 		extname: '.css'}))
-// 	.pipe(gulp.dest('app/css'));
-// });
-
-
-// .pipe(rename({
-// 				basename: 'libs',
-// 				suffix: '.min',
-// 				extname: '.css'}))
-
 
 
 
@@ -94,9 +89,10 @@ gulp.task('browser-sync', function(){
 
 
 /*Синхронизация*/
-gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function(){
+gulp.task('watch', ['browser-sync', 'jade', 'css-libs', 'scripts'], function(){
 	gulp.watch('app/sass/*.sass', ['sass']);
 	gulp.watch('app/css/libs/*.sass', ['css-libs']);
+	gulp.watch('app/jade/**/*.jade', ['jade']);
 	gulp.watch('app/*.html', browserSync.reload);
 	gulp.watch('app/js/*.js', browserSync.reload);
 });
