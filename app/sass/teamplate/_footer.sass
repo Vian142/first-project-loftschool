@@ -1,21 +1,56 @@
 .footer
-	background-color: rgba(0,0,0, 0.85)
+	background-color: rgba(0,0,0, 0.7)
 
 /* Колонки в футере */
 .columns-block
 	color: #fff /* Временно */
+	padding: 20px 0
 .column
 	display: inline-block
-	width: 32.99999999%
+	vertical-align: top
+	max-width: 30%
+	padding: 0 10px
+	margin: 0 1.5%
+	border-left: 2px solid rgba(255,255,255, 0.2)
+	&:first-child
+		border-left: none
 
 
 /* Нижнее меню в футере */
 .bottom-menu
+.b-menu__list
+	padding: 0
+	margin: 0
 .b-menu__item
+	display: inline-block
 .b-menu__link
+	font-family: 'Roboto'
+	font-size: 16px
+	font-weight: 500
+	color: rgba(255,255,255, 1)
+	cursor: pointer
+	padding: 0 5px
+	&:first-child
+		padding-left: 0
 
 
 /* Лист контактов в футере */
 .contact-list
+	margin: 0
+	padding: 0
 .contact-list__item
+	list-style: none
 .contact-list__link
+	font-size: 16px
+	font-family: 'Roboto'
+	color: rgb(255, 255, 255)
+	line-height: 1.625
+	font-weight: 300
+	font-style: normal
+
+
+.copyright
+	background-color: #2b57a4
+.copyright-text
+	text-align: center
+	color: #fff

@@ -133,4 +133,7 @@
 .icon-up-open-1:before {
   content: '\e80e'; }
 
+.icon-location:before {
+  content: '\e80f'; }
+
 /* Font-icon */

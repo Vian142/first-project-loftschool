@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Главная</title><meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Главная</title>
+    <meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/libs/normalize.min.css"><script src="libs/modernizr/modernizr.js"></script>
   </head>
   <body>
     <header class="header res">
-      <div class="heade__top-line">
+      <div class="header__top-line">
         <div class="wrap-icons">
           <ul class="social-icons-list">
             <li class="social-icon"><a class="social-icon__link"><i class="icon-item icon-vkontakte"></i></a></li>
@@ -42,18 +43,16 @@
         </div>
       </div>
     </header>
-    <div class="main-content">
+    <div class="main-content clearfix">
       <div class="left-side">
         <div class="top-content-block">
           <h2 class="tittle-content">Обо мне</h2>
         </div>
-        <div class="middle-block">
-          <div class="middle-block__wrap">
-            <div class="img-content"><img src="img/userfiles/photo.jpg" alt="Фото Иван Попов" class="photo_content">
-              <h3 class="tittle-h3">Кто я</h3>
-              <p>Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтом и приложений. Мне нравится делать интересные и современные проекты.</p>
-              <P>Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!</P>
-            </div>
+        <div class="middle-content-block">
+          <div class="img-content"><img src="img/userfiles/photo.jpg" alt="Фото Иван Попов" class="photo_content">
+            <h3 class="tittle-h3">Кто я</h3>
+            <p>Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтом и приложений. Мне нравится делать интересные и современные проекты.</p>
+            <P>Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!</P>
           </div>
         </div>
       </div>
@@ -85,12 +84,20 @@
     </div>
     <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.588605639992!2d38.98209235035211!3d45.07385586732398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f045bfe708688b%3A0x75e51149ce88c618!2z0L_RgC4g0KDQtdC_0LjQvdCwLCAxNNC6MSwg0JrRgNCw0YHQvdC-0LTQsNGALCDQmtGA0LDRgdC90L7QtNCw0YDRgdC60LjQuSDQutGA0LDQuSwgMzUwMDUx!5e0!3m2!1sru!2sru!4v1465811265668" width="1000" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
       <div class="contacts-popup">
-        <h3>Контакты</h3>
-        <ul class="contacts-list">
-          <li class="contacts-list__item"><a href="tel:spag77"><i class="contact-list__item__icon"></i><span>spag_77</span></a></li>
-          <li class="contacts-list__item"><a href="tel:+70000"><i class="contact-list__item__icon"></i><span>7589651321</span></a></li>
-          <li class="contacts-list__item"><a hhref="mailto:vian142@gmail.com"><i class="contact-list__item__icon"></i><span>аовра</span></a></li>
-          <li class="contacts-list__item"><a href="#"><i class="contact-list__item__icon"></i><span>СПБ улица</span></a></li>
+        <h4 class="title-popup">Контакты</h4>
+        <ul class="contacts-popup__list">
+          <li class="contacts-popup__list__item">
+            <div class="contact-list__item_wrap-icon"><i class="contact-list__item__icon icon-skype"></i></div><a href="tel:spag77" class="contacts-popup__link">spag77</a>
+          </li>
+          <li class="contacts-popup__list__item">
+            <div class="contact-list__item_wrap-icon"><i class="contact-list__item__icon icon-phone"></i></div><a href="tel:+754652590" class="contacts-popup__link">+7568616545</a>
+          </li>
+          <li class="contacts-popup__list__item">
+            <div class="contact-list__item_wrap-icon"><i class="contact-list__item__icon icon-mail"></i></div><a href="mailto:vian142@gmail.com" class="contacts-popup__link">vian142@gmail.com</a>
+          </li>
+          <li class="contacts-popup__list__item">
+            <div class="contact-list__item_wrap-icon"><i class="contact-list__item__icon icon-location"></i></div><a href="#" class="contacts-popup__link">СПБ Улица. дом 5</a>
+          </li>
         </ul>
       </div>
     </div>

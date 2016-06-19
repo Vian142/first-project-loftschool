@@ -134,6 +134,9 @@
 .icon-up-open-1:before {
   content: '\e80e'; }
 
+.icon-location:before {
+  content: '\e80f'; }
+
 /* Font-icon */
 html.js .loader {
   background: none repeat scroll 0 0 #ffffff;
@@ -358,8 +361,26 @@ img {
   .social-icon__link:hover {
     color: #004cd1; }
 
+/* Разбиение на колонки */
 .main-content {
   background-color: #f2f0e8; }
+
+.left-side {
+  width: 50%;
+  float: left; }
+
+.right-side {
+  width: 50%;
+  float: left; }
+
+/* Левая колонка на две */
+.top-content-block {
+  width: 50%;
+  float: left; }
+
+.middle-content-block {
+  width: 50%;
+  float: left; }
 
 .middle-block__wrap {
   padding: 0 20px;
@@ -395,16 +416,87 @@ img {
   height: 30px;
   background: red; }
 
+.contacts-popup {
+  max-width: 580px;
+  min-height: 230px;
+  margin: 0 auto; }
+
+.contacts-popup__list {
+  padding: 0;
+  margin: 0; }
+
+.contacts-popup__list__item {
+  display: inline-block;
+  width: 49%;
+  display: block; }
+
+.contact-list__item_wrap-icon {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-color: #004cd1;
+  color: #fff;
+  text-align: center;
+  line-height: 45px;
+  font-size: 24px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
 .footer {
-  background-color: rgba(0, 0, 0, 0.85); }
+  background-color: rgba(0, 0, 0, 0.7); }
 
 /* Колонки в футере */
 .columns-block {
-  color: #fff; }
+  color: #fff;
+  padding: 20px 0; }
 
 .column {
   display: inline-block;
-  width: 32.99999999%; }
+  vertical-align: top;
+  max-width: 30%;
+  padding: 0 10px;
+  margin: 0 1.5%;
+  border-left: 2px solid rgba(255, 255, 255, 0.2); }
+  .column:first-child {
+    border-left: none; }
 
 /* Нижнее меню в футере */
+.b-menu__list {
+  padding: 0;
+  margin: 0; }
+
+.b-menu__item {
+  display: inline-block; }
+
+.b-menu__link {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  padding: 0 5px; }
+  .b-menu__link:first-child {
+    padding-left: 0; }
+
 /* Лист контактов в футере */
+.contact-list {
+  margin: 0;
+  padding: 0; }
+
+.contact-list__item {
+  list-style: none; }
+
+.contact-list__link {
+  font-size: 16px;
+  font-family: 'Roboto';
+  color: white;
+  line-height: 1.625;
+  font-weight: 300;
+  font-style: normal; }
+
+.copyright {
+  background-color: #2b57a4; }
+
+.copyright-text {
+  text-align: center;
+  color: #fff; }

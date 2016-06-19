@@ -1,19 +1,23 @@
 .contacts-popup
-	h3 Контакты
-	ul.contacts-list
-		li.contacts-list__item
-			a(href="tel:spag77" )
-				i.contact-list__item__icon
-				<span>spag_77</span>
-		li.contacts-list__item
-			a(href="tel:+70000" )
-				i.contact-list__item__icon
-				<span>7589651321</span>
-		li.contacts-list__item
-			a(hhref="mailto:vian142@gmail.com")
-				i.contact-list__item__icon
-				<span>аовра</span>
-		li.contacts-list__item
-			a(href="#")
-				i.contact-list__item__icon
-				<span>СПБ улица</span>
+	h4.title-popup Контакты
+	ul.contacts-popup__list
+		li.contacts-popup__list__item
+			.contact-list__item_wrap-icon
+				i.contact-list__item__icon.icon-skype
+			a.contacts-popup__link(href="tel:spag77" ).
+					spag77
+		li.contacts-popup__list__item
+			.contact-list__item_wrap-icon
+				i.contact-list__item__icon.icon-phone
+			a.contacts-popup__link(href="tel:+754652590" ).
+					+7568616545
+		li.contacts-popup__list__item
+			.contact-list__item_wrap-icon
+				i.contact-list__item__icon.icon-mail
+			a.contacts-popup__link(href="mailto:vian142@gmail.com").
+					vian142@gmail.com
+		li.contacts-popup__list__item
+			.contact-list__item_wrap-icon
+				i.contact-list__item__icon.icon-location
+			a.contacts-popup__link(href="#").
+					СПБ Улица. дом 5
