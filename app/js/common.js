@@ -39,6 +39,11 @@ $(function() {
 	
 });
 
+
+
+
+
+
 $(document).ready(function() {
 
 	function heightDetect(){
@@ -50,6 +55,13 @@ $(document).ready(function() {
 	$(window).resize(function() {
 		heightDetect();
 	});
+
+
+/*Иконки диаграмм*/
+	$(function() {
+	    $(".dial").knob();
+	});
+
 
 	// Кнопка меню
 $(".btn-sandwitch").click(function() {

@@ -191,10 +191,18 @@ body textarea:required:valid {
 img {
   max-width: 100%; }
 
+p {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: #474b57;
+  line-height: 1.5em;
+  text-align: left; }
+
 .header {
   background-image: url(../img/bg_header_night.jpg);
   background-size: cover;
-  color: #fff; }
+  color: #fff;
+  height: 100%; }
 
 .social-icons-list {
   padding: 0;
@@ -367,11 +375,19 @@ img {
 
 .left-side {
   width: 50%;
-  float: left; }
+  float: left;
+  background-color: #f2f0e8;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .right-side {
   width: 50%;
-  float: left; }
+  float: left;
+  background-color: #eae8e2;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 /* Левая колонка на две */
 .top-content-block {
@@ -410,11 +426,25 @@ img {
 .img-content {
   width: 70%; }
 
+.diagram-title {
+  font-size: 2em;
+  font-family: "Roboto";
+  color: #474b57;
+  line-height: 1.2em;
+  margin: 10px 0; }
+
+.diagram-list {
+  padding: 5px 0 10px 0;
+  margin: 5px 0 20px 0; }
+
 .diagram-list__item {
   display: inline-block;
-  width: 30px;
-  height: 30px;
-  background: red; }
+  margin-right: 30px;
+  width: 105px;
+  height: 105px;
+  overflow: hidden; }
+  .diagram-list__item:last-child {
+    margin-right: 0; }
 
 .contacts-popup {
   max-width: 560px;
