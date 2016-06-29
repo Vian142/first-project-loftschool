@@ -198,29 +198,12 @@ p {
   line-height: 1.5em;
   text-align: left; }
 
-.header {
-  background-image: url(../img/bg_header_night.jpg);
-  background-size: cover;
-  color: #fff;
-  height: 100%; }
-
-.social-icons-list {
-  padding: 0;
-  margin: 0; }
-
-.social-icon {
-  display: inline-block; }
-
-.list__item {
-  color: #ffffff; }
-
-/*-----*/
 /* Кнопка гамбургер */
 .btn-sandwitch {
   position: fixed;
   padding: 0;
   top: 25px;
-  right: 30px;
+  right: 15px;
   border: 0;
   background: none;
   z-index: 40; }
@@ -316,15 +299,34 @@ p {
       width: 89px; }
 
 /*-----*/
-.wrap-header-info {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.main-wrapper {
+  display: block;
+  margin: 0 auto;
   height: 100%; }
 
+.header {
+  min-height: 300px;
+  height: 100vh; }
+
+.wrap-header {
+  display: block;
+  position: relative;
+  height: 100%;
+  background-image: url(../img/bg_header_night.jpg);
+  background-size: cover; }
+
 .header-info {
-  margin: auto; }
+  position: absolute;
+  width: 360px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
 
 .header-info__avatar {
   width: 141px;
@@ -332,20 +334,28 @@ p {
   -webkit-border-radius: 50%;
           border-radius: 50%;
   overflow: hidden;
-  margin: 0 auto; }
+  margin: 0 auto 15px auto;
+  vertical-align: top; }
 
 .header-info__avatar__img {
   max-width: 100%; }
+
+.header-info__title {
+  margin: 15px 0 0 0; }
 
 .h-info__title {
   font-size: 35px;
   font-family: 'Roboto';
   color: white;
   line-height: 1.2em;
+  vertical-align: top;
   text-align: center;
   font-weight: normal;
   font-style: normal;
-  margin: 5px 0 0 0; }
+  margin: 0; }
+
+.header-info__description {
+  vertical-align: top; }
 
 .h-info__descr {
   font-size: 16px;
@@ -356,18 +366,46 @@ p {
   margin: 0; }
 
 /*-----*/
+/* Треугольник */
+.box-traingle {
+  margin: 0 auto; }
+
+.traingle-left {
+  fill: red; }
+
+.traingle-right {
+  fill: blue; }
+
 .social-icons-list {
-  padding: 10px 20px; }
+  width: 210px;
+  margin: 0;
+  padding: 20px 20px; }
 
 .social-icon {
   display: inline-block;
-  margin-right: 25px; }
+  margin-right: 18px; }
+  .social-icon:last-child {
+    margin-right: 0; }
 
 .social-icon__link {
-  font-size: 1.2em;
-  cursor: pointer; }
+  font-size: 2em;
+  cursor: pointer;
+  color: #f8f8f8; }
   .social-icon__link:hover {
     color: #004cd1; }
+
+.wrapper-content {
+  position: relative; }
+
+.wrapper-content::before {
+  content: '';
+  position: absolute;
+  background-image: url(../img/triangle.png);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 165px;
+  top: -165px;
+  z-index: 10; }
 
 /* Разбиение на колонки */
 .main-content {
@@ -377,7 +415,7 @@ p {
   width: 50%;
   float: left;
   background-color: #f2f0e8;
-  padding: 0 20px;
+  padding: 0 38px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -385,7 +423,7 @@ p {
   width: 50%;
   float: left;
   background-color: #eae8e2;
-  padding: 0 20px;
+  padding: 0 38px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -413,18 +451,39 @@ p {
   font-weight: normal;
   font-style: normal; }
 
-.tittle-h3 {
-  font-size: 24px;
-  font-family: 'Roboto';
-  color: #474b57;
+.tittle-content {
+  font-size: 62px;
+  font-family: "SansusWebissimo";
+    font-family-color: #373e42;
   text-transform: uppercase;
-  line-height: 1.171;
+  line-height: 1.17em;
   text-align: center;
   font-weight: 500;
-  font-style: bold; }
+  font-style: bold;
+  margin: 0; }
+
+.tittle-h3 {
+  font-size: 35px;
+  font-family: "SansusWebissimo";
+  color: #474b57;
+  text-transform: uppercase;
+  line-height: 1.17em;
+  text-align: center;
+  margin: 10px 0; }
+  .tittle-h3:after {
+    content: '';
+    display: block;
+    width: 87px;
+    height: 3px;
+    background: #98999c;
+    margin: 25px auto 0 auto; }
 
 .img-content {
   width: 70%; }
+
+.diagram-block {
+  margin: 30px 0 0 0;
+  padding: 25px 5px; }
 
 .diagram-title {
   font-size: 2em;
@@ -439,9 +498,9 @@ p {
 
 .diagram-list__item {
   display: inline-block;
-  margin-right: 30px;
-  width: 105px;
-  height: 105px;
+  margin-right: 35px;
+  width: 120px;
+  height: 120px;
   overflow: hidden; }
   .diagram-list__item:last-child {
     margin-right: 0; }

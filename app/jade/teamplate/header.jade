@@ -1,24 +1,8 @@
-header.header.res
-	.header__top-line
-		include social_icon			
-		.navigation
-			button.btn-sandwitch
-				span.btn-sandwitch__toggle
-					span.sw-line.sw-top
-					span.sw-line.sw-middle
-					span.sw-line.sw-bottom
-			.wrap-navigation
-				nav.main-nav
-					ul.nav-list
-						li.nav-list__item
-							a.nav-list__item__link Мои работы
-						li.nav-list__item
-							a.nav-list__item__link Блог
-						li.nav-list__item
-							a.nav-list__item__link Обо мне
-						li.nav-list__item
-							a.nav-list__item__link Авторизация
-	.wrap-header-info
+header.header
+	.wrap-header
+		.header__top-line
+			include social_icon
+			include navigation
 		.header-info
 			.header-info__avatar
 				img(class="header-info__avatar__img", src="img/userfiles/photo.jpg", alt="Иван Попов")
@@ -26,4 +10,5 @@ header.header.res
 				h2.h-info__title Иван Попов
 			.header-info__description
 				p.h-info__descr Веб Разработчик
-
+	.arrow
+		a(href="#").arrow-link

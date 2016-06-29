@@ -8,157 +8,139 @@
     <link rel="stylesheet" href="css/libs/normalize.min.css"><script src="libs/modernizr/modernizr.js"></script>
   </head>
   <body>
-    <header class="header res">
-      <div class="header__top-line">
-        <div class="wrap-icons">
-          <ul class="social-icons-list">
-            <li class="social-icon"><a class="social-icon__link"><i class="icon-item icon-vkontakte"></i></a></li>
-            <li class="social-icon"><a class="social-icon__link"><i class="icon-item icon-github"></i></a></li>
-            <li class="social-icon"><a class="social-icon__link"><i class="icon-item icon-linkedin"></i></a></li>
-          </ul>
-        </div>
-        <div class="navigation">
-          <button class="btn-sandwitch"><span class="btn-sandwitch__toggle"><span class="sw-line sw-top"></span><span class="sw-line sw-middle"></span><span class="sw-line sw-bottom"></span></span></button>
-          <div class="wrap-navigation">
-            <nav class="main-nav">
-              <ul class="nav-list">
-                <li class="nav-list__item"><a class="nav-list__item__link">Мои работы</a></li>
-                <li class="nav-list__item"><a class="nav-list__item__link">Блог</a></li>
-                <li class="nav-list__item"><a class="nav-list__item__link">Обо мне</a></li>
-                <li class="nav-list__item"><a class="nav-list__item__link">Авторизация</a></li>
+    <div class="main-wrapper">
+      <header class="header">
+        <div class="wrap-header">
+          <div class="header__top-line">
+            <div class="wrap-icons">
+              <ul class="social-icons-list">
+                <li class="social-icon"><a href="https://vk.com/volk_mastermind" class="social-icon__link"><i class="icon-item icon-vkontakte"></i></a></li>
+                <li class="social-icon"><a href="https://github.com/Vian142/" class="social-icon__link"><i class="icon-item icon-github"></i></a></li>
+                <li class="social-icon"><a href="https://ru.linkedin.com/in/иван-попов-9abba8123" class="social-icon__link"><i class="icon-item icon-linkedin"></i></a></li>
               </ul>
-            </nav>
+            </div>
+            <div class="navigation">
+              <button class="btn-sandwitch"><span class="btn-sandwitch__toggle"><span class="sw-line sw-top"></span><span class="sw-line sw-middle"></span><span class="sw-line sw-bottom"></span></span></button>
+              <div class="wrap-navigation">
+                <nav class="main-nav">
+                  <ul class="nav-list">
+                    <li class="nav-list__item"><a class="nav-list__item__link">Мои работы</a></li>
+                    <li class="nav-list__item"><a class="nav-list__item__link">Блог</a></li>
+                    <li class="nav-list__item"><a class="nav-list__item__link">Обо мне</a></li>
+                    <li class="nav-list__item"><a class="nav-list__item__link">Авторизация</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="header-info">
+            <div class="header-info__avatar"><img src="img/userfiles/photo.jpg" alt="Иван Попов" class="header-info__avatar__img"></div>
+            <div class="header-info__title">
+              <h2 class="h-info__title">Иван Попов</h2>
+            </div>
+            <div class="header-info__description">
+              <p class="h-info__descr">Веб Разработчик</p>
+            </div>
+          </div>
+        </div>
+        <div class="arrow"><a href="#" class="arrow-link"></a></div>
+      </header>
+      <div class="wrapper-content">
+        <div class="main-content clearfix">
+          <div class="left-side">
+            <div class="top-content-block">
+              <h2 class="tittle-content">Обо мне</h2>
+            </div>
+            <div class="middle-content-block"><img src="img/userfiles/photo.jpg" alt="Фото Иван Попов" class="photo_content">
+              <h3 class="tittle-h3">Кто я</h3>
+              <p>Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтом и приложений. Мне нравится делать интересные и современные проекты.</p>
+              <P>Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!</P>
+            </div>
+          </div>
+          <div class="right-side">
+            <h3 class="tittle-h3">Чем я могу быть <br> вам полезен</h3>
+            <p>Больше всего меня привлекает Frontend разработка, но так же могу решать и дургие задачи</p>
+            <div class="diagram-block">
+              <h4 class="diagram-title">Frontend</h4>
+              <ul class="diagram-list">
+                <li class="diagram-list__item">
+                  <input type="text" data-width="120" value="75" data-fgColor="#165ad1" class="dial">
+                </li>
+                <li class="diagram-list__item">
+                  <input type="text" data-width="120" value="23" data-fgColor="#165ad1" class="dial">
+                </li>
+                <li class="diagram-list__item">
+                  <input type="text" data-width="120" value="40" data-fgColor="#165ad1" class="dial">
+                </li>
+              </ul>
+              <h4 class="diagram-title">Backend</h4>
+              <ul class="diagram-list">
+                <li class="diagram-list__item">
+                  <input type="text" data-width="120" value="63" data-fgColor="#165ad1" class="dial">
+                </li>
+                <li class="diagram-list__item">
+                  <input type="text" data-width="120" value="24" data-fgColor="#165ad1" class="dial">
+                </li>
+                <li class="diagram-list__item">
+                  <input type="text" data-width="120" value="90" data-fgColor="#165ad1" class="dial">
+                </li>
+                <li class="diagram-list__item">
+                  <input type="text" data-width="120" value="32" data-fgColor="#165ad1" class="dial">
+                </li>
+              </ul>
+              <h4 class="diagram-title">Workflow</h4>
+              <ul class="diagram-list">
+                <li class="diagram-list__item">
+                  <input type="text" data-width="120" value="70" data-fgColor="#165ad1" class="dial">
+                </li>
+                <li class="diagram-list__item">
+                  <input type="text" data-width="120" value="42" data-fgColor="#165ad1" class="dial">
+                </li>
+                <li class="diagram-list__item">
+                  <input type="text" data-width="120" value="33" data-fgColor="#165ad1" class="dial">
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      <div class="wrap-header-info">
-        <div class="header-info">
-          <div class="header-info__avatar"><img src="img/userfiles/photo.jpg" alt="Иван Попов" class="header-info__avatar__img"></div>
-          <div class="header-info__title">
-            <h2 class="h-info__title">Иван Попов</h2>
+      <footer class="footer">
+        <div class="columns-block">
+          <div class="column"><span>
+              Этот сайт я сделал в рамках
+              обучения в Школе онлайн
+              образования LoftSchool</span></div>
+          <div class="column">
+            <div class="bottom-menu">
+              <ul class="b-menu__list">
+                <li class="b-menu__item"><a class="b-menu__link">Мои работы</a></li>
+                <li class="b-menu__item"><a class="b-menu__link">Обо мне</a></li>
+                <li class="b-menu__item"><a class="b-menu__link">Блок</a></li>
+                <li class="b-menu__item"><a class="b-menu__link">Авторизация</a></li>
+              </ul>
+            </div>
+            <div class="wrap-icons">
+              <ul class="social-icons-list">
+                <li class="social-icon"><a href="https://vk.com/volk_mastermind" class="social-icon__link"><i class="icon-item icon-vkontakte"></i></a></li>
+                <li class="social-icon"><a href="https://github.com/Vian142/" class="social-icon__link"><i class="icon-item icon-github"></i></a></li>
+                <li class="social-icon"><a href="https://ru.linkedin.com/in/иван-попов-9abba8123" class="social-icon__link"><i class="icon-item icon-linkedin"></i></a></li>
+              </ul>
+            </div>
           </div>
-          <div class="header-info__description">
-            <p class="h-info__descr">Веб Разработчик</p>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="main-content clearfix">
-      <div class="left-side">
-        <div class="top-content-block">
-          <h2 class="tittle-content">Обо мне</h2>
-        </div>
-        <div class="middle-content-block"><img src="img/userfiles/photo.jpg" alt="Фото Иван Попов" class="photo_content">
-          <h3 class="tittle-h3">Кто я</h3>
-          <p>Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтом и приложений. Мне нравится делать интересные и современные проекты.</p>
-          <P>Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!</P>
-        </div>
-      </div>
-      <div class="right-side">
-        <h3 class="tittle-h3">Чем я могу быть <br> вам полезен</h3>
-        <p>Больше всего меня привлекает Frontend разработка, но так же могу решать и дургие задачи</p>
-        <div class="diagram-block">
-          <h4 class="diagram-title">Frontend</h4>
-          <ul class="diagram-list">
-            <li class="diagram-list__item">
-              <input type="text" data-width="100" value="75" data-fgColor="#165ad1" class="dial">
-            </li>
-            <li class="diagram-list__item">
-              <input type="text" data-width="100" value="23" data-fgColor="#165ad1" class="dial">
-            </li>
-            <li class="diagram-list__item">
-              <input type="text" data-width="100" value="40" data-fgColor="#165ad1" class="dial">
-            </li>
-          </ul>
-          <h4 class="diagram-title">Backend</h4>
-          <ul class="diagram-list">
-            <li class="diagram-list__item">
-              <input type="text" data-width="100" value="63" data-fgColor="#165ad1" class="dial">
-            </li>
-            <li class="diagram-list__item">
-              <input type="text" data-width="100" value="24" data-fgColor="#165ad1" class="dial">
-            </li>
-            <li class="diagram-list__item">
-              <input type="text" data-width="100" value="90" data-fgColor="#165ad1" class="dial">
-            </li>
-            <li class="diagram-list__item">
-              <input type="text" data-width="100" value="32" data-fgColor="#165ad1" class="dial">
-            </li>
-          </ul>
-          <h4 class="diagram-title">Workflow</h4>
-          <ul class="diagram-list">
-            <li class="diagram-list__item">
-              <input type="text" data-width="100" value="70" data-fgColor="#165ad1" class="dial">
-            </li>
-            <li class="diagram-list__item">
-              <input type="text" data-width="100" value="42" data-fgColor="#165ad1" class="dial">
-            </li>
-            <li class="diagram-list__item">
-              <input type="text" data-width="100" value="33" data-fgColor="#165ad1" class="dial">
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="map">
-      <div class="contacts-popup">
-        <h4 class="title-popup">Контакты</h4>
-        <ul class="contacts-popup__list">
-          <li class="contacts-popup__list__item">
-            <div class="contact-list__item_wrap-icon"><i class="contact-list__item__icon icon-skype"></i></div>
-            <div class="contact-list__item_wrap-descr"><a href="tel:spag77" class="contacts-popup__link">spag77</a></div>
-          </li>
-          <li class="contacts-popup__list__item">
-            <div class="contact-list__item_wrap-icon"><i class="contact-list__item__icon icon-phone"></i></div>
-            <div class="contact-list__item_wrap-descr"><a href="tel:+754652590" class="contacts-popup__link">+7 950 040 6444</a></div>
-          </li>
-          <li class="contacts-popup__list__item">
-            <div class="contact-list__item_wrap-icon"><i class="contact-list__item__icon icon-mail"></i></div>
-            <div class="contact-list__item_wrap-descr"><a href="mailto:vian142@gmail.com" class="contacts-popup__link">vian142@gmail.com</a></div>
-          </li>
-          <li class="contacts-popup__list__item">
-            <div class="contact-list__item_wrap-icon"><i class="contact-list__item__icon icon-location"></i></div>
-            <div class="contact-list__item_wrap-descr"><a href="#" class="contacts-popup__link">г.Санкт-Петербург, не дом и не улица</a></div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <footer class="footer">
-      <div class="columns-block">
-        <div class="column"><span>
-            Этот сайт я сделал в рамках
-            обучения в Школе онлайн
-            образования LoftSchool</span></div>
-        <div class="column">
-          <div class="bottom-menu">
-            <ul class="b-menu__list">
-              <li class="b-menu__item"><a class="b-menu__link">Мои работы</a></li>
-              <li class="b-menu__item"><a class="b-menu__link">Обо мне</a></li>
-              <li class="b-menu__item"><a class="b-menu__link">Блок</a></li>
-              <li class="b-menu__item"><a class="b-menu__link">Авторизация</a></li>
+          <div class="column">
+            <ul class="contact-list">
+              <li class="contact-list__item"><a class="contact-list___link">skype_kdn</a></li>
+              <li class="contact-list__item"><a class="contact-list___link">vian142@gmail.com</a></li>
+              <li class="contact-list__item"><a class="contact-list___link">+79185336545</a></li>
+              <li class="contact-list__item"><a class="contact-list___link">г.Санкт-Петербург, улица дом</a></li>
             </ul>
           </div>
-          <div class="wrap-icons">
-            <ul class="social-icons-list">
-              <li class="social-icon"><a class="social-icon__link"><i class="icon-item icon-vkontakte"></i></a></li>
-              <li class="social-icon"><a class="social-icon__link"><i class="icon-item icon-github"></i></a></li>
-              <li class="social-icon"><a class="social-icon__link"><i class="icon-item icon-linkedin"></i></a></li>
-            </ul>
-          </div>
         </div>
-        <div class="column">
-          <ul class="contact-list">
-            <li class="contact-list__item"><a class="contact-list___link">skype_kdn</a></li>
-            <li class="contact-list__item"><a class="contact-list___link">vian142@gmail.com</a></li>
-            <li class="contact-list__item"><a class="contact-list___link">+79185336545</a></li>
-            <li class="contact-list__item"><a class="contact-list___link">г.Санкт-Петербург, улица дом</a></li>
-          </ul>
+        <div class="copyright">
+          <div class="copyright-text">@Попов Иван | Создано с любовью в LoftSchool | 2016</div>
         </div>
-      </div>
-      <div class="copyright">
-        <div class="copyright-text">@Попов Иван | Создано с любовью в LoftSchool | 2016</div>
-      </div>
-    </footer>
+      </footer>
+    </div>
     <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="js/libs.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>

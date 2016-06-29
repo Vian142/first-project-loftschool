@@ -46,15 +46,13 @@ $(function() {
 
 $(document).ready(function() {
 
-	function heightDetect(){
-		$(".res").css("height", $(window).height());
-	};
-
-	heightDetect();
-
-	$(window).resize(function() {
-		heightDetect();
-	});
+	// function heightDetect(){
+	// 	$(".res").css("height", $(window).height());
+	// };
+	// heightDetect();
+	// $(window).resize(function() {
+	// 	heightDetect();
+	// });
 
 
 /*Иконки диаграмм*/
