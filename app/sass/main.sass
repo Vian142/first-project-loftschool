@@ -65,18 +65,23 @@ p
 @import "teamplate/_social_icon.sass"
 .wrapper-content
 	position: relative
-
+.about:before
+	background-image: url(../img/triangle.png)
+.blog:before
+	background-image: url(../img/2triangle.png)
 .wrapper-content::before
 	content: ''
 	position: absolute
-	background-image: url(../img/triangle.png)
 	background-size: 100% 100%
 	width: 100%
 	height: 165px
 	top:  -165px
 	z-index: 10
 
+
+
 @import "teamplate/_about.sass"
+@import "teamplate/_blog-content.sass"
 @import "teamplate/_diagram.sass"
 @import "teamplate/_popup-contacts.sass"
 @import "teamplate/_footer.sass"

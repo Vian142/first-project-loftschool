@@ -1,7 +1,7 @@
 doctype html
 html(lang="ru")
     head
-        title Главная
+        title Страница блога
         meta(charset='utf-8')
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -12,9 +12,8 @@ html(lang="ru")
         .main-wrapper
             include teamplate/_mixin
             include teamplate/header
-            .wrapper-content.about
-                include teamplate/about
-            include teamplate/popup-contacts
+            .wrapper-content.blog
+                include teamplate/blog-content
             include teamplate/footer
         script(type="text/javascript" src="js/jquery/jquery.min.js")
         script(type="text/javascript" src="js/libs.min.js")
