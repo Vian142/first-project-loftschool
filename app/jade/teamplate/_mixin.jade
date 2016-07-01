@@ -6,10 +6,3 @@ mixin popupinfo(img-href, img-alt, title, descr)
 			h2.name-user title
 		.user-info_description
 			p.descr descr
-
-mixin social-icon(nameClass, array)
-	ul.social-icons-list
-		each object, index in array
-			li.social-icon
-				a.social-icon__link(href="#{object.href}")
-					i.icon-item. #{object.classIcon}
