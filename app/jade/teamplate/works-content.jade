@@ -5,6 +5,40 @@
 			p.text-block__descr html, css, javascript
 			.text-block__link
 				a(href="#").link-btn
-					i.icon-link
-					Посмотреть сайт
+					| i.icon-link
+					| Посмотреть сайт
 	.right-side.area-content
+.bottom-content
+	.tittle-content.white-text Что обо мне говорят
+	.block-reviews.clearfix
+		.block-reviews__column
+			.review__photo-autor
+				img(src="img/userfiles/dmitriy_koval.jpg" alt="Дмитрий Ковальчук")
+			.review_text
+				| Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+			.review_autor
+				| <b>Ковальчук Дмитрий</b> <br> - основатель LoftSchool
+		.block-reviews__column
+			.review__photo-autor
+				img(src="img/userfiles/zar_zaharov.jpg" alt="Зар Захаров")
+			.review_text
+				| Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+			.review_autor
+				| <b>Зар Захаров</b> <br> - главный преподаватель
+	.wrap-form-contact
+		.form-contact
+			h3.tittle-h3.white-text Связаться со мной
+			form.form-contact__container
+				.form-contact__container__name
+					input(type='text' placeholder="Ваше имя").f-input.f-input-name
+				.form-contact__container__email
+					input(type='email' placeholder="Ваш email").f-input.f-input-email
+				.form-contact__container__msg
+					textarea(placeholder="Ваше сообщение").f-input.f-input-textarea
+				.form-contact__container__controls
+					.form-contact__container__submit
+						button(type='submit').f-button.f-button-submit
+							| Отправить
+					.form-contact__container__reset
+						button(type='reset').f-button.f-button-reset
+							| Очистить

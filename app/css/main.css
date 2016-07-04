@@ -315,7 +315,7 @@ p {
   height: 100%; }
 
 .header {
-  min-height: 300px;
+  min-height: 400px;
   height: 100vh; }
 
 .wrap-header {
@@ -327,7 +327,7 @@ p {
 
 .header-info {
   position: absolute;
-  width: 360px;
+  width: 370px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -477,7 +477,8 @@ p {
   text-align: center;
   font-weight: 500;
   font-style: bold;
-  margin: 0; }
+  max-width: 380px;
+  margin: 0 auto; }
 
 .tittle-h3 {
   font-size: 35px;
@@ -494,6 +495,9 @@ p {
     height: 3px;
     background: #98999c;
     margin: 25px auto 0 auto; }
+
+.white-text {
+  color: white; }
 
 .img-content {
   width: 70%; }
@@ -572,6 +576,11 @@ p {
   text-align: left;
   margin: 9px 0; }
 
+.bottom-content {
+  background-image: url(../img/bg_header_night.jpg);
+  background-size: cover;
+  padding: 30px 0; }
+
 .text-block {
   width: 340px;
   min-height: 330px;
@@ -634,6 +643,137 @@ p {
   font-size: 1.3em;
   line-height: 27px;
   margin-right: 7px; }
+
+/* Блок отзывов */
+.block-reviews {
+  margin: 0 auto; }
+
+.block-reviews__column {
+  width: 400px;
+  float: left;
+  margin: 0px auto;
+  padding: 20px 10px; }
+
+.review__photo-autor {
+  width: 130px;
+  height: 130px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  overflow: hidden;
+  margin: 10px auto; }
+
+.review_text {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: white;
+  font-style: italic;
+  line-height: 1.6rem;
+  text-align: left; }
+
+.review_autor {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: white;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center; }
+
+/* Форма контактов */
+.form-contact {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 440px;
+  width: 380px;
+  margin: 10px auto;
+  padding: 20px 0 0 0; }
+
+.f-input {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  margin: 10px 17px;
+  width: 340px;
+  height: 45px;
+  font-size: 1rem;
+  font-family: "Roboto";
+  color: rgba(255, 255, 255, 0.502);
+  line-height: 2rem;
+  padding: 13px 16px; }
+
+.f-input-textarea {
+  height: 130px;
+  line-height: 1.8rem;
+  resize: none; }
+
+.f-button {
+  color: rgba(255, 255, 255, 0.502);
+  background-color: rgba(255, 255, 255, 0.01);
+  border: none;
+  width: 190px;
+  height: 45px;
+  float: left;
+  font-size: 16px;
+  font-family: "Roboto";
+  line-height: 2.3rem;
+  text-align: center; }
+  .f-button:hover {
+    color: white;
+    background-color: #004cd1; }
+
+.wrap-btn-SignIn {
+  display: block;
+  position: absolute;
+  border: 1px solid white;
+  top: 24px;
+  right: 100px; }
+
+.btn-SignIn {
+  display: block;
+  width: 178px;
+  height: 43px;
+  font-size: 16px;
+  font-family: "Roboto";
+  color: white;
+  line-height: 43px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none; }
+  .btn-SignIn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #0a44aa; }
+
+.welcome-block {
+  padding: 40px 0 0 0;
+  background-color: rgba(28, 31, 41, 0.5); }
+
+.soc-icon-welcome {
+  color: #0a44aa; }
+  .soc-icon-welcome:hover {
+    color: #004cd1; }
+
+.horizont-nav {
+  padding: 0;
+  margin: 0; }
+
+.horizont-nav__item {
+  list-style: none;
+  display: inline-block;
+  border-right: 2px solid #dee3e7;
+  margin: 0 -2px; }
+  .horizont-nav__item:last-child {
+    border-right: none; }
+
+.horizont-nav__item__link {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: white;
+  display: block;
+  line-height: 2.25em;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 30px;
+  background-color: #004cd1; }
+
+.horizont-nav__item__link:hover {
+  background-color: #083c96; }
 
 .diagram-block {
   margin: 30px 0 0 0;
