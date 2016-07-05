@@ -14,9 +14,11 @@ html(lang="ru")
             include teamplate/header
             .wrapper-content.about
                 include teamplate/about
-            include teamplate/popup-contacts
+            include teamplate/map
             include teamplate/footer
         script(type="text/javascript" src="js/jquery/jquery.min.js")
         script(type="text/javascript" src="js/libs.min.js")
+        script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDGyS4Ch28czN3_lOLTbxsxzDGeoNFjVJQ&sensor=false&extension=.js')
+        script(type="text/javascript" src="js/map.js")
         script(type="text/javascript" src="js/common.js")
 

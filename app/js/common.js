@@ -32,7 +32,6 @@ $(function() {
 			$.smoothScroll();
 		}
 	} catch(err) {
-
 	};
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
@@ -41,18 +40,7 @@ $(function() {
 
 
 
-
-
-
 $(document).ready(function() {
-
-	// function heightDetect(){
-	// 	$(".res").css("height", $(window).height());
-	// };
-	// heightDetect();
-	// $(window).resize(function() {
-	// 	heightDetect();
-	// });
 
 
 /*Иконки диаграмм*/
@@ -78,11 +66,11 @@ $(".btn-sandwitch").click(function(){
 		$(".wrap-navigation").fadeIn(200);
 	};
 });
+
+
 });
 
 $(window).load(function() {
-
 	$(".loader_inner").fadeOut();
 	$(".loader").delay(400).fadeOut("slow");
-
 });

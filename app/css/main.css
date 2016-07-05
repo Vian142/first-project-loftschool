@@ -502,6 +502,26 @@ p {
 .img-content {
   width: 70%; }
 
+/* Карта */
+#mapGoogle {
+  height: 400px;
+  width: 1800px; }
+
+.gm-style-iw * {
+  display: block;
+  width: 100%; }
+
+.gm-style-iw h4 {
+  margin: 0;
+  padding: 0; }
+
+.gm-style-iw p {
+  margin: 0;
+  padding: 0; }
+
+.gm-style-iw a {
+  color: #4272db; }
+
 .content-blog {
   background-color: #faf8f0;
   padding: 40px 0; }
@@ -646,17 +666,18 @@ p {
 
 /* Блок отзывов */
 .block-reviews {
+  padding: 25px 10px;
   margin: 0 auto; }
 
 .block-reviews__column {
   width: 400px;
   float: left;
   margin: 0px auto;
-  padding: 20px 10px; }
+  padding: 20px 10px 0 10px; }
 
 .review__photo-autor {
-  width: 130px;
-  height: 130px;
+  width: 80px;
+  height: 80px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   overflow: hidden;
@@ -675,21 +696,25 @@ p {
   font-family: "Roboto";
   color: white;
   font-style: italic;
-  line-height: 1.5;
-  text-align: center; }
+  line-height: 1.5rem;
+  text-align: center;
+  margin: 20px 0 0 0; }
 
 /* Форма контактов */
+.wrap-form-contact {
+  padding: 30px 0; }
+
 .form-contact {
   background-color: rgba(0, 0, 0, 0.2);
   height: 440px;
   width: 380px;
   margin: 10px auto;
-  padding: 20px 0 0 0; }
+  padding: 30px 0 0 0; }
 
 .f-input {
   background-color: rgba(255, 255, 255, 0.2);
   border: none;
-  margin: 10px 17px;
+  margin: 17px 23px 4px 23px;
   width: 340px;
   height: 45px;
   font-size: 1rem;
@@ -701,7 +726,11 @@ p {
 .f-input-textarea {
   height: 130px;
   line-height: 1.8rem;
-  resize: none; }
+  resize: none;
+  padding: 7px 16px; }
+
+.form-contact__container__controls {
+  padding-top: 10px; }
 
 .f-button {
   color: rgba(255, 255, 255, 0.502);
