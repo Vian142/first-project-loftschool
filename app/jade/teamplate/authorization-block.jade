@@ -2,25 +2,29 @@
 	.login-block
 		h3.tittle-h3.white-text Авторизуйтесь
 		form.form-signIn
-			.form-signIn__wrap-login
-				input(type="text" placeholder="Логин").form-signIn-input.form-signIn__login
-			.form-signIn__wrap-password
-				input(type="password" placeholder="Пароль").form-signIn-input.form-signIn__password
-			.form-signIn__wrap-check
-				label
-					input(type="checkbox" name="check-notHuman").form-signIn-checkbox
+			.form-signIn__wrap-login.form-signIn__icon-input
+				input(type="text" placeholder="Логин").form-signIn-input
+			.form-signIn__wrap-password.form-signIn__icon-input
+				input(type="password" placeholder="Пароль").form-signIn-input
+
+
+			.form-signIn__wrap-checkbox
+				input(type="checkbox" id="checkbox-human" name="checkbox-human").form-signIn__input-checkbox
+				label(for="checkbox-human").form-signIn__checkbox-label
+					span.form-signIn__checkbox-label__span
 					| Я человек
+
 			.form-signIn__wrap_text-block
 				| Вы точно человек?
 			.form-signIn__wrap-check-repeat
 				label.form-signIn__check-repeat-label
-					input(type="radio" name="check-human" value="true").form-signIn__check-repeat
+					input(type="radio" name="radio-human" value="true").form-signIn__check-repeat
 					| Да
 				label.form-signIn__check-repeat-label
-					input(type="radio" name="check-human" value="false").form-signIn__check-repeat
+					input(type="radio" name="radio-human" value="false").form-signIn__check-repeat
 					| Не уверен
-		ul.horizont-nav
-			li.horizont-nav__item
+		ul.horizont-nav.nav-login
+			li.horizont-nav__item.nav-login__item
 				a(href="/works.html").horizont-nav__item__link На главную
-			li.horizont-nav__item
+			li.horizont-nav__item.nav-login__item
 				a(href="/about.html").horizont-nav__item__link Войти

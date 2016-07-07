@@ -821,19 +821,79 @@ p {
 .form-signIn-input {
   background-color: white;
   display: block;
-  width: 340px;
+  width: 100%;
   height: 45px;
   border: none;
-  margin: 20px auto; }
+  margin: 0px auto;
+  padding-left: 58px;
+  font-size: 1rem;
+  font-family: "Roboto";
+  color: rgba(55, 62, 66, 0.502);
+  line-height: 1rem;
+  text-align: left; }
 
-.form-signIn__wrap-check {
+.form-signIn__icon-input:before {
+  font-family: 'loftfont';
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #c4cbcd;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  height: 45px;
+  background-color: #f0efe9; }
+
+/* Login */
+.form-signIn__wrap-login {
+  margin: 0 auto 20px auto;
+  position: relative;
+  width: 340px; }
+  .form-signIn__wrap-login:before {
+    content: '\e80a'; }
+
+/* Пароль */
+.form-signIn__wrap-password {
+  margin: 0 auto 20px auto;
+  position: relative;
+  width: 340px; }
+  .form-signIn__wrap-password:before {
+    content: '\e807'; }
+
+/* Проверка на Я человек */
+.form-signIn__wrap-checkbox {
+  width: 120px;
+  margin: 10px auto; }
+
+.form-signIn__input-checkbox {
+  display: none; }
+
+.form-signIn__checkbox-label {
   font-size: 16px;
   font-family: "Roboto";
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.5rem;
-  text-align: center;
-  margin: 10px 0; }
+  text-align: center; }
 
+.form-signIn__input-checkbox + .form-signIn__checkbox-label .form-signIn__checkbox-label__span {
+  display: block;
+  float: left;
+  height: 20px;
+  width: 20px;
+  background-color: #0548be;
+  cursor: pointer;
+  margin-right: 5px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px; }
+  .form-signIn__input-checkbox + .form-signIn__checkbox-label .form-signIn__checkbox-label__span:hover {
+    background-color: #083c96; }
+
+.form-signIn__input-checkbox:checked + .form-signIn__checkbox-label .form-signIn__checkbox-label__span {
+  background-image: url(../img/icons/check.svg);
+  background-position: center;
+  background-repeat: no-repeat; }
+
+/* Текстовый блок */
 .form-signIn__wrap_text-block {
   font-size: 16px;
   font-family: "Roboto";
@@ -859,6 +919,13 @@ p {
 
 .form-signIn__check-repeat {
   margin: 0px 7px; }
+
+/* Горизонт меню */
+.nav-login {
+  margin-top: 30px; }
+
+.nav-login__item {
+  width: 50%; }
 
 .diagram-block {
   margin: 30px 0 0 0;

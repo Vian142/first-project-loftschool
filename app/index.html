@@ -20,36 +20,35 @@
           <div class="login-block">
             <h3 class="tittle-h3 white-text">Авторизуйтесь</h3>
             <form class="form-signIn">
-              <div class="form-signIn__wrap-login">
-                <input type="text" placeholder="Логин" class="form-signIn-input form-signIn__login">
+              <div class="form-signIn__wrap-login form-signIn__icon-input">
+                <input type="text" placeholder="Логин" class="form-signIn-input">
               </div>
-              <div class="form-signIn__wrap-password">
-                <input type="password" placeholder="Пароль" class="form-signIn-input form-signIn__password">
+              <div class="form-signIn__wrap-password form-signIn__icon-input">
+                <input type="password" placeholder="Пароль" class="form-signIn-input">
               </div>
-              <div class="form-signIn__wrap-check">
-                <label>
-                  <input type="checkbox" name="check-notHuman" class="form-signIn-checkbox">Я человек
-                </label>
+              <div class="form-signIn__wrap-checkbox">
+                <input type="checkbox" id="checkbox-human" name="checkbox-human" class="form-signIn__input-checkbox">
+                <label for="checkbox-human" class="form-signIn__checkbox-label"><span class="form-signIn__checkbox-label__span"></span>Я человек</label>
               </div>
               <div class="form-signIn__wrap_text-block">Вы точно человек?</div>
               <div class="form-signIn__wrap-check-repeat">
                 <label class="form-signIn__check-repeat-label">
-                  <input type="radio" name="check-human" value="true" class="form-signIn__check-repeat">Да
+                  <input type="radio" name="radio-human" value="true" class="form-signIn__check-repeat">Да
                 </label>
                 <label class="form-signIn__check-repeat-label">
-                  <input type="radio" name="check-human" value="false" class="form-signIn__check-repeat">Не уверен
+                  <input type="radio" name="radio-human" value="false" class="form-signIn__check-repeat">Не уверен
                 </label>
               </div>
             </form>
-            <ul class="horizont-nav">
-              <li class="horizont-nav__item"><a href="/works.html" class="horizont-nav__item__link">На главную</a></li>
-              <li class="horizont-nav__item"><a href="/about.html" class="horizont-nav__item__link">Войти</a></li>
+            <ul class="horizont-nav nav-login">
+              <li class="horizont-nav__item nav-login__item"><a href="/works.html" class="horizont-nav__item__link">На главную</a></li>
+              <li class="horizont-nav__item nav-login__item"><a href="/about.html" class="horizont-nav__item__link">Войти</a></li>
             </ul>
           </div>
         </div>
       </header>
     </div>
-    <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="bower-libs/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="js/libs.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
   </body>
