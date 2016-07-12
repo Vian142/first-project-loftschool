@@ -1,21 +1,7 @@
-- var menuItems = {"works.html": "Мои работы", "blog.html": "Блок", "about.html": "Обо мне", "index.html": "Авторизация"}
+- var menuItems = {"works.html": "Мои работы", "blog.html": "Блог", "about.html": "Обо мне", "index.html": "Авторизация"}
 
-mixin mainMenu
-	nav.main-nav
-		ul.nav-list
-			each title_link, href in menuItems
-				li.nav-list__item
-					a.nav-list__item__link(href=href)=title_link
-
-
-mixin menu1
-	nav.main-nav
-			ul.nav-list
-				li.nav-list__item
-					a(href="/works.html").nav-list__item__link Мои работы
-				li.nav-list__item
-					a(href="/blog.html").nav-list__item__link Блог
-				li.nav-list__item
-					a(href="about.html").nav-list__item__link Обо мне
-				li.nav-list__item
-					a(href="index.html").nav-list__item__link Авторизация
+mixin menu (classList, classItem)
+	ul(class="#{classList}")
+		each title_link, href in menuItems
+			li(class="#{classItem}")
+				a(class="#{classItem}__link", href=href)=title_link

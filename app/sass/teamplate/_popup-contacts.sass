@@ -1,4 +1,8 @@
 .contacts-popup
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
 	max-width: 580px
 	min-height: 230px
 	margin: 0 auto
@@ -7,7 +11,6 @@
 	box-shadow: 0 0 0 1px rgba(0,0,0, 0.2)
 
 
-//повторяется стиль
 .title-popup
 	font-size: 35px
 	margin: 5px 0 20px 0
@@ -24,15 +27,17 @@
 		width: 89px
 		height: 3px
 
+/* Контакты с иконками */
 .contacts-popup__list
-	padding: 0
-	margin: 10px 0 0 0
+	padding: 5px 0 0 0
+	margin: 0
 .contacts-popup__list__item
 	vertical-align: top
 	list-style: none
 	padding: 0
-	margin-bottom: 30px
+	margin-bottom: 28px
 	width: 49%
+	min-width: 200px
 	max-width: 290px
 	display: inline-block
 	/* adapt--width&display */

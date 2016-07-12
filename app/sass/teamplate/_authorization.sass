@@ -1,10 +1,10 @@
+/* Кнопка Авторизоваться */
 .wrap-btn-SignIn
 	display: block
 	position: absolute
 	border: 1px solid rgb(255,255,255)
 	top: 24px
 	right: 100px
-
 .btn-SignIn
 	display: block
 	width: 178px
@@ -20,16 +20,31 @@
 		background-color: rgba(255, 255, 255, 0.8)
 		color: #0a44aa
 
-.welcome-block
-	width: 370px
-	padding: 40px 0 0 0
-	background-color: rgba(28, 31, 41, 0.5)
 
 /* доп.класс для соц.иконок */
 .soc-icon-welcome
 	color: #0a44aa
 	&:hover
 		color: #004cd1
+
+
+.authorization-block
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+
+/* Главное окошко */
+.welcome-block
+	width: 370px
+	padding: 40px 0 0 0
+	background-color: rgba(28, 31, 41, 0.5)
+	position: absolute
+	top: 0
+	left: 0
+
+
+
 /* Меню в welcome block */
 .horizont-nav
 	padding: 0
@@ -54,18 +69,12 @@
 .horizont-nav__item__link:hover
 	background-color: rgb(8, 60, 150)
 
-
-
-
-
+/* Логин блок */
 .login-block
-	padding-top: 30px
+	padding-top: 10px
 	width: 370px
 	background-color: rgba(28,31,41, 0.5)
-	position: absolute
-	top: 50%
-	left: 50%
-	transform: translate(-50%, -50%)
+
 
 .form-signIn-input
 	background-color: rgb(255, 255, 255)
@@ -80,7 +89,6 @@
 	color: rgba(55, 62, 66, 0.502)
 	line-height: 1rem
 	text-align: left
-
 
 .form-signIn__icon-input:before
 	font-family: 'loftfont'
@@ -116,7 +124,6 @@
 .form-signIn__wrap-checkbox
 	width: 120px
 	margin: 10px auto
-
 
 .form-signIn__input-checkbox
 	display: none
@@ -168,10 +175,8 @@
 .form-signIn__check-repeat
 	margin: 0px 7px
 
-
-
-/* Горизонт меню */
+/* Горизонтальное меню форме */
 .nav-login
-	margin-top: 30px
+	margin-top: 24px
 .nav-login__item
 	width: 50%

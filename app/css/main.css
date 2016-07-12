@@ -360,6 +360,15 @@ p {
   font-style: normal;
   margin: 0; }
 
+.h-info__title-page {
+  font-size: 63px;
+  font-family: "SansusWebissimo";
+  color: white;
+  text-transform: uppercase;
+  line-height: 3rem;
+  text-align: center;
+  margin: 20px 0; }
+
 .header-info__description {
   vertical-align: top; }
 
@@ -437,12 +446,14 @@ p {
 .left-side {
   width: 50%;
   float: left;
-  background-color: #f2f0e8; }
+  background-color: #f2f0e8;
+  padding-top: 10px; }
 
 .right-side {
   width: 50%;
   float: left;
-  background-color: #eae8e2; }
+  background-color: #eae8e2;
+  padding-top: 10px; }
 
 /* Левая колонка на две */
 .top-content-block {
@@ -453,6 +464,8 @@ p {
   width: 50%;
   float: left; }
 
+/* Верхний блок */
+/* Средний блок */
 .middle-block__wrap {
   padding: 0 20px;
   margin: 0 auto; }
@@ -463,11 +476,13 @@ p {
   font-family: "Roboto";
   color: #373e42;
   text-transform: uppercase;
-  line-height: 1.048;
+  line-height: 1.1rem;
   text-align: center;
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  margin: 0; }
 
+/* Заголовки */
 .tittle-content {
   font-size: 62px;
   font-family: "SansusWebissimo";
@@ -485,16 +500,18 @@ p {
   font-family: "SansusWebissimo";
   color: #474b57;
   text-transform: uppercase;
-  line-height: 1.17em;
+  line-height: 2.6rem;
   text-align: center;
-  margin: 10px 0; }
-  .tittle-h3:after {
-    content: '';
-    display: block;
-    width: 87px;
-    height: 3px;
-    background: #98999c;
-    margin: 25px auto 0 auto; }
+  margin: 15px auto; }
+
+/* Нижняя Линия */
+.bottom-line:after {
+  content: '';
+  display: block;
+  width: 87px;
+  height: 3px;
+  background: #98999c;
+  margin: 25px auto 0 auto; }
 
 .white-text {
   color: white; }
@@ -503,8 +520,12 @@ p {
   width: 70%; }
 
 /* Карта */
+.map {
+  width: 100%;
+  position: relative; }
+
 #mapGoogle {
-  height: 400px;
+  height: 950px;
   width: 100%; }
 
 .gm-style-iw * {
@@ -747,6 +768,7 @@ p {
     color: white;
     background-color: #004cd1; }
 
+/* Кнопка Авторизоваться */
 .wrap-btn-SignIn {
   display: block;
   position: absolute;
@@ -769,16 +791,28 @@ p {
     background-color: rgba(255, 255, 255, 0.8);
     color: #0a44aa; }
 
-.welcome-block {
-  width: 370px;
-  padding: 40px 0 0 0;
-  background-color: rgba(28, 31, 41, 0.5); }
-
 /* доп.класс для соц.иконок */
 .soc-icon-welcome {
   color: #0a44aa; }
   .soc-icon-welcome:hover {
     color: #004cd1; }
+
+.authorization-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+/* Главное окошко */
+.welcome-block {
+  width: 370px;
+  padding: 40px 0 0 0;
+  background-color: rgba(28, 31, 41, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 /* Меню в welcome block */
 .horizont-nav {
@@ -807,16 +841,11 @@ p {
 .horizont-nav__item__link:hover {
   background-color: #083c96; }
 
+/* Логин блок */
 .login-block {
-  padding-top: 30px;
+  padding-top: 10px;
   width: 370px;
-  background-color: rgba(28, 31, 41, 0.5);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
+  background-color: rgba(28, 31, 41, 0.5); }
 
 .form-signIn-input {
   background-color: white;
@@ -920,9 +949,9 @@ p {
 .form-signIn__check-repeat {
   margin: 0px 7px; }
 
-/* Горизонт меню */
+/* Горизонтальное меню форме */
 .nav-login {
-  margin-top: 30px; }
+  margin-top: 24px; }
 
 .nav-login__item {
   width: 50%; }
@@ -966,6 +995,12 @@ p {
           transform: translate(-50%, -50%); }
 
 .contacts-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   max-width: 580px;
   min-height: 230px;
   margin: 0 auto;
@@ -990,16 +1025,18 @@ p {
     width: 89px;
     height: 3px; }
 
+/* Контакты с иконками */
 .contacts-popup__list {
-  padding: 0;
-  margin: 10px 0 0 0; }
+  padding: 5px 0 0 0;
+  margin: 0; }
 
 .contacts-popup__list__item {
   vertical-align: top;
   list-style: none;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   width: 49%;
+  min-width: 200px;
   max-width: 290px;
   display: inline-block;
   /* adapt--width&display */ }
@@ -1033,18 +1070,18 @@ p {
   background-color: rgba(28, 31, 41, 0.85); }
 
 /* Колонки в футере */
-.columns-block {
+.footer__columns-block {
   color: #fff;
   padding: 20px 0; }
 
-.column {
+.footer__column {
   display: inline-block;
   vertical-align: top;
   width: 30%;
   padding: 0 10px;
   margin: 0 1.5%;
   border-left: 2px solid rgba(255, 255, 255, 0.2); }
-  .column:first-child {
+  .footer__column:first-child {
     border-left: none; }
 
 /* Нижнее меню в футере */
@@ -1055,14 +1092,15 @@ p {
 .b-menu__item {
   display: inline-block; }
 
-.b-menu__link {
+.b-menu__item__link {
   font-family: 'Roboto';
   font-size: 16px;
   font-weight: 500;
   color: white;
   cursor: pointer;
-  padding: 0 5px; }
-  .b-menu__link:first-child {
+  padding: 0 5px;
+  text-decoration: none; }
+  .b-menu__item__link:first-child {
     padding-left: 0; }
 
 /* Лист контактов в футере */
@@ -1081,9 +1119,22 @@ p {
   font-weight: 300;
   font-style: normal; }
 
-.copyright {
+.bcg-blue {
   background-color: #2b57a4; }
 
+.copyright-main {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 100%; }
+
+.copyright {
+  padding: 10px 5px;
+  height: 38px; }
+
 .copyright-text {
-  text-align: center;
-  color: #fff; }
+  font-size: 1rem;
+  font-family: "Roboto";
+  color: white;
+  line-height: 1rem;
+  text-align: center; }

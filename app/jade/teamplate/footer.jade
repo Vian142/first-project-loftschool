@@ -1,23 +1,15 @@
 footer.footer
-	.columns-block
-		.column
+	.footer__columns-block
+		.footer__column
 			span.
 				Этот сайт я сделал в рамках
 				обучения в Школе онлайн
 				образования LoftSchool
-		.column
+		.footer__column
 			.bottom-menu
-				ul.b-menu__list
-					li.b-menu__item
-						a.b-menu__link Мои работы
-					li.b-menu__item
-						a.b-menu__link Обо мне
-					li.b-menu__item
-						a.b-menu__link Блок
-					li.b-menu__item
-						a.b-menu__link Авторизация
+				+menu('b-menu__list', 'b-menu__item')
 			include social_icon
-		.column
+		.footer__column
 			ul.contact-list
 				li.contact-list__item
 					a(href="#", target="_blank").contact-list___link.
@@ -31,6 +23,6 @@ footer.footer
 				li.contact-list__item
 					a(href="#", target="_blank").contact-list___link.
 						г.Санкт-Петербург, улица дом
-	.copyright
+	.copyright.bcg-blue
 		.copyright-text.
-			@Попов Иван | Создано с любовью в LoftSchool | 2016
+			© Попов Иван | Создано с любовью в LoftSchool | 2016

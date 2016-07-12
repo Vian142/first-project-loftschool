@@ -5,20 +5,35 @@ html(lang="ru")
         meta(charset='utf-8')
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        link(rel="stylesheet", href="bower-libs/normalize-css/normalize.css")
         link(rel="stylesheet", href="css/main.css")
-        link(rel="stylesheet", href="css/libs/normalize.min.css")
-        script(src="libs/modernizr/modernizr.js")
     body
         .main-wrapper
             include teamplate/_mixin
-            include teamplate/header
+            include teamplate/header-user
             .wrapper-content.about
-                include teamplate/about
+                .main-content.clearfix
+                    .left-side.area-content
+                        .top-content-block
+                            h2.tittle-content Обо мне
+                        .middle-content-block
+                            img(src="img/userfiles/photo.jpg", class="photo_content", alt="Фото Иван Попов")
+                            h3.tittle-h3.bottom-line
+                                | Кто я
+                            p.
+                                Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтом и приложений. Мне нравится делать интересные и современные проекты.
+                            P.
+                                Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+                    .right-side.area-content
+                        h3.tittle-h3.bottom-line
+                            |Чем я могу быть <br> вам полезен
+                        p.
+                            Больше всего меня привлекает Frontend разработка, но так же могу решать и другие задачи
+                        include teamplate/diagram
             include teamplate/map
+                include teamplate/popup-contacts
             include teamplate/footer
-        script(type="text/javascript" src="bower-libs/jquery/dist/jquery.min.js")
-        script(type="text/javascript" src="js/libs.min.js")
+        include teamplate/_scripts
         script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDGyS4Ch28czN3_lOLTbxsxzDGeoNFjVJQ&sensor=false&extension=.js')
         script(type="text/javascript" src="js/map.js")
-        script(type="text/javascript" src="js/common.js")
 
