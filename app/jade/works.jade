@@ -12,7 +12,44 @@ html(lang="ru")
             include teamplate/_mixin
             include teamplate/header-user
             .wrapper-content
-                include teamplate/works-content
+                .main-content.clearfix
+                    .portfolio-wrapper#portfolio-container
+                        .portfolio__preview-block
+                            img
+                        .portfolio__description
+                            .portfolio__description_text-block
+                                h3.text-block__title Сайт школы онлайн образования
+                                p.text-block__descr
+                                    | html, css, javascript
+                                .text-block__link
+                                    a(href="#").link-btn
+                                        i.icon-link
+                                        | Посмотреть сайт
+                        .portfolio__thumbnail-wrapper
+                            .portfolio__thumbnail-next
+                                a(href="#").portfolio__thumbnail-down__link
+                                    img(src).portfolio__thumbnail-image
+                            .portfolio__thumbnail-prev
+                                a(href="#").portfolio__thumbnail-up__link
+                                    img(src).portfolio__thumbnail-image
+                .bottom-content
+                    .tittle-content.white-text Что обо мне говорят
+                    .block-reviews.clearfix
+                        .block-reviews__column
+                            .review__photo-autor
+                                img(src="img/userfiles/dmitriy_koval.jpg" alt="Дмитрий Ковальчук")
+                            .review_text
+                                | Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                            .review_autor
+                                | <b>Ковальчук Дмитрий</b> <br> - основатель LoftSchool
+                        .block-reviews__column
+                            .review__photo-autor
+                                img(src="img/userfiles/zar_zaharov.jpg" alt="Зар Захаров")
+                            .review_text
+                                | Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                            .review_autor
+                                | <b>Зар Захаров</b> <br> - главный преподаватель
+                    include teamplate/form-contacts
             include teamplate/footer
         include teamplate/_scripts
 
