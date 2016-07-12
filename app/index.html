@@ -15,53 +15,55 @@
             <div class="wrap-btn-SignIn"><a href="#" class="btn-SignIn">Авторизоваться</a></div>
           </div>
         </div>
-        <div class="authorization-block">
-          <div class="welcome-block">
-            <div class="header-info__avatar"><img src="img/userfiles/photo.jpg" alt="Иван Попов" class="header-info__avatar__img"></div>
-            <div class="header-info__title">
-              <h2 class="h-info__title">Иван Попов</h2>
+        <div class="authorization-block__wrapper">
+          <div class="authorization-block">
+            <div class="welcome-block face">
+              <div class="header-info__avatar"><img src="img/userfiles/photo.jpg" alt="Иван Попов" class="header-info__avatar__img"></div>
+              <div class="header-info__title">
+                <h2 class="h-info__title">Иван Попов</h2>
+              </div>
+              <div class="header-info__description">
+                <p class="h-info__descr">Веб Разработчик</p>
+              </div>
+              <ul class="social-icons-list">
+                <li class="social-icon"><a href="https://vk.com/volk_mastermind" class="soc-icon-welcome social-icon__link"><i class="icon-item icon-vkontakte"></i></a></li>
+                <li class="social-icon"><a href="https://github.com/Vian142/" class="soc-icon-welcome social-icon__link"><i class="icon-item icon-github"></i></a></li>
+                <li class="social-icon"><a href="https://ru.linkedin.com/in/иван-попов-9abba8123" class="soc-icon-welcome social-icon__link"><i class="icon-item icon-linkedin"></i></a></li>
+              </ul>
+              <ul class="horizont-nav">
+                <li class="horizont-nav__item"><a href="/works.html" class="horizont-nav__item__link">Мои работы</a></li>
+                <li class="horizont-nav__item"><a href="/about.html" class="horizont-nav__item__link">Обо мне</a></li>
+                <li class="horizont-nav__item"><a href="/blog.html" class="horizont-nav__item__link">Блог</a></li>
+              </ul>
             </div>
-            <div class="header-info__description">
-              <p class="h-info__descr">Веб Разработчик</p>
+            <div class="login-block back">
+              <h3 class="tittle-h3 white-text">Авторизуйтесь</h3>
+              <form class="form-signIn">
+                <div class="form-signIn__wrap-login form-signIn__icon-input">
+                  <input type="text" placeholder="Логин" class="form-signIn-input">
+                </div>
+                <div class="form-signIn__wrap-password form-signIn__icon-input">
+                  <input type="password" placeholder="Пароль" class="form-signIn-input">
+                </div>
+                <div class="form-signIn__wrap-checkbox">
+                  <input type="checkbox" id="checkbox-human" name="checkbox-human" class="form-signIn__input-checkbox">
+                  <label for="checkbox-human" class="form-signIn__checkbox-label"><span class="form-signIn__checkbox-label__span"></span>Я человек</label>
+                </div>
+                <div class="form-signIn__wrap_text-block">Вы точно человек?</div>
+                <div class="form-signIn__wrap-check-repeat">
+                  <label class="form-signIn__check-repeat-label">
+                    <input type="radio" name="radio-human" value="true" class="form-signIn__check-repeat">Да
+                  </label>
+                  <label class="form-signIn__check-repeat-label">
+                    <input type="radio" name="radio-human" value="false" class="form-signIn__check-repeat">Не уверен
+                  </label>
+                </div>
+              </form>
+              <ul class="horizont-nav nav-login">
+                <li class="horizont-nav__item nav-login__item"><a href="#" class="horizont-nav__item__link btn-back">На главную</a></li>
+                <li class="horizont-nav__item nav-login__item"><a href="#" class="horizont-nav__item__link">Войти</a></li>
+              </ul>
             </div>
-            <ul class="social-icons-list">
-              <li class="social-icon"><a href="https://vk.com/volk_mastermind" class="soc-icon-welcome social-icon__link"><i class="icon-item icon-vkontakte"></i></a></li>
-              <li class="social-icon"><a href="https://github.com/Vian142/" class="soc-icon-welcome social-icon__link"><i class="icon-item icon-github"></i></a></li>
-              <li class="social-icon"><a href="https://ru.linkedin.com/in/иван-попов-9abba8123" class="soc-icon-welcome social-icon__link"><i class="icon-item icon-linkedin"></i></a></li>
-            </ul>
-            <ul class="horizont-nav">
-              <li class="horizont-nav__item"><a href="/works.html" class="horizont-nav__item__link">Мои работы</a></li>
-              <li class="horizont-nav__item"><a href="/about.html" class="horizont-nav__item__link">Обо мне</a></li>
-              <li class="horizont-nav__item"><a href="/blog.html" class="horizont-nav__item__link">Блог</a></li>
-            </ul>
-          </div>
-          <div class="login-block back">
-            <h3 class="tittle-h3 white-text">Авторизуйтесь</h3>
-            <form class="form-signIn">
-              <div class="form-signIn__wrap-login form-signIn__icon-input">
-                <input type="text" placeholder="Логин" class="form-signIn-input">
-              </div>
-              <div class="form-signIn__wrap-password form-signIn__icon-input">
-                <input type="password" placeholder="Пароль" class="form-signIn-input">
-              </div>
-              <div class="form-signIn__wrap-checkbox">
-                <input type="checkbox" id="checkbox-human" name="checkbox-human" class="form-signIn__input-checkbox">
-                <label for="checkbox-human" class="form-signIn__checkbox-label"><span class="form-signIn__checkbox-label__span"></span>Я человек</label>
-              </div>
-              <div class="form-signIn__wrap_text-block">Вы точно человек?</div>
-              <div class="form-signIn__wrap-check-repeat">
-                <label class="form-signIn__check-repeat-label">
-                  <input type="radio" name="radio-human" value="true" class="form-signIn__check-repeat">Да
-                </label>
-                <label class="form-signIn__check-repeat-label">
-                  <input type="radio" name="radio-human" value="false" class="form-signIn__check-repeat">Не уверен
-                </label>
-              </div>
-            </form>
-            <ul class="horizont-nav nav-login">
-              <li class="horizont-nav__item nav-login__item"><a href="/works.html" class="horizont-nav__item__link">На главную</a></li>
-              <li class="horizont-nav__item nav-login__item"><a href="/about.html" class="horizont-nav__item__link">Войти</a></li>
-            </ul>
           </div>
         </div>
       </header>

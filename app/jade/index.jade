@@ -15,9 +15,10 @@ html(lang="ru")
                     .header__top-line
                         .wrap-btn-SignIn
                             a.btn-SignIn(href="#") Авторизоваться
-                .authorization-block
-                    include teamplate/welcome-block
-                    include teamplate/authorization-form
+                .authorization-block__wrapper
+                    .authorization-block
+                        include teamplate/welcome-block
+                        include teamplate/authorization-form
             .copyright.copyright-main
                 .copyright-text.
                     © Попов Иван | Создано с любовью в LoftSchool | 2016

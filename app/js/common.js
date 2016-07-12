@@ -62,17 +62,24 @@ $(document).ready(function() {
 		};
 	});
 
-/*Вращение блока авторизации*/
+/* Вращение блока авторизации */
   	var btnSignIn = $('.btn-SignIn'),
   		authorizationBlock = $('.authorization-block'),
   		welcomeBlock = $('.welcome-block'),
-  		loginBlock = $('.login-block');
-
-	btnSignIn.click(function(event) {
-		$this.fadeOut(50);
-		$(authorizationBlock).toggleClass('rotate-block');
+  		loginBlock = $('.login-block'),
+  		btnBack = $('.btn-back');
+// Кнопка авторизоваться
+	btnSignIn.click(function(e) {
+		e.preventDefault();
+		btnSignIn.fadeOut(150);
+		$(authorizationBlock).addClass('flipper');
 	});
-
+// Кнопка На главную
+	btnBack.click(function(e) {
+		e.preventDefault();
+		btnSignIn.fadeIn(150);
+		$(authorizationBlock).removeClass('flipper');
+	});
 
 });
 

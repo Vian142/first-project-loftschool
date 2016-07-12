@@ -28,20 +28,38 @@
 		color: #004cd1
 
 
-.authorization-block
+
+
+/* Главное окошко */
+.welcome-block
+	position: absolute
+	top: 0
+	left: 0
+	width: 370px
+	padding: 40px 0 0 0
+	background-color: rgba(28, 31, 41, 0.5)
+
+.authorization-block__wrapper
 	position: absolute
 	top: 50%
 	left: 50%
 	transform: translate(-50%, -50%)
+.authorization-block
+	height: 470px
+	transition: 1.2s
+	transform-style: preserve-3d
 
-/* Главное окошко */
-.welcome-block
-	width: 370px
-	padding: 40px 0 0 0
-	background-color: rgba(28, 31, 41, 0.5)
-	position: absolute
-	top: 0
-	left: 0
+/* Поворот */
+.flipper
+	transform: rotateY(180deg)
+.face
+	backface-visibility: hidden
+	z-index: 2
+	transform: rotateY(0deg)
+.back
+	backface-visibility: hidden
+	transform: rotateY(180deg)
+
 
 
 
@@ -54,6 +72,7 @@
 	display: inline-block
 	border-right: 2px solid rgb(222, 227, 231)
 	margin: 0 -2px
+	box-sizing: content-box
 	&:last-child
 		border-right: none
 .horizont-nav__item__link
