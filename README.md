@@ -9,3 +9,13 @@ Portfolio LoftSchool
 + Sass
 + Jade
 + Npm
+
+### Установка компонентов NPM
+```
+npm install
+```
+
+### Установка bower пакетов
+```
+bower install
+```

@@ -15,23 +15,46 @@ html(lang="ru")
                 .main-content.clearfix
                     .portfolio-wrapper#portfolio-container
                         .portfolio__preview-block
-                            img
+                            .portfolio__preview-block__slide-container
+                                img(src="img/slider/preview/img_prev-1.png").portfolio__preview__image
+
                         .portfolio__description
-                            .portfolio__description_text-block
-                                h3.text-block__title Сайт школы онлайн образования
-                                p.text-block__descr
-                                    | html, css, javascript
-                                .text-block__link
-                                    a(href="#").link-btn
-                                        i.icon-link
-                                        | Посмотреть сайт
+                            .portfolio__description__container
+                                .portfolio__description__container__item
+                                    h3.portfolio__description__title Сайт школы онлайн образования
+                                    div.portfolio__description__text
+                                        | html, css, javascript
+                                    .portfolio__description__link
+                                        a(href="#").link-btn
+                                            i.icon-link
+                                            | Посмотреть сайт
+
                         .portfolio__thumbnail-wrapper
-                            .portfolio__thumbnail-next
-                                a(href="#").portfolio__thumbnail-down__link
-                                    img(src).portfolio__thumbnail-image
-                            .portfolio__thumbnail-prev
-                                a(href="#").portfolio__thumbnail-up__link
-                                    img(src).portfolio__thumbnail-image
+                            .portfolio__thumbnail__control
+                                .list-thumb__wrap
+                                    ul.portfolio-list-thumb
+                                        li.portfolio-list-thumb__item
+                                            a(href="#").portfolio__thumbnail__link.slider__link-down
+                                                img(src="img/slider/thumbnail/img_thumb-1.png").portfolio__thumbnail-image.slider__thumbnail__next
+                                        li.portfolio-list-thumb__item
+                                            a(href="#").portfolio__thumbnail__link.slider__link-down
+                                                img(src="img/slider/thumbnail/img_thumb-1.png").portfolio__thumbnail-image.slider__thumbnail__next
+                                        li.portfolio-list-thumb__item
+                                            a(href="#").portfolio__thumbnail__link.slider__link-down
+                                                img(src="img/slider/thumbnail/img_thumb-1.png").portfolio__thumbnail-image.slider__thumbnail__next
+                            .portfolio__thumbnail__control
+                                .list-thumb__wrap
+                                    ul.portfolio-list-thumb
+                                        li.portfolio-list-thumb__item
+                                            a(href="#").portfolio__thumbnail__link.slider__link-up
+                                                img(src="img/slider/thumbnail/img_thumb-2.png").portfolio__thumbnail-image.slider__thumbnail__prev
+                                        li.portfolio-list-thumb__item
+                                            a(href="#").portfolio__thumbnail__link.slider__link-up
+                                                img(src="img/slider/thumbnail/img_thumb-2.png").portfolio__thumbnail-image.slider__thumbnail__prev
+                                        li.portfolio-list-thumb__item
+                                            a(href="#").portfolio__thumbnail__link.slider__link-up
+                                                img(src="img/slider/thumbnail/img_thumb-2.png").portfolio__thumbnail-image.slider__thumbnail__prev
+
                 .bottom-content
                     .tittle-content.white-text Что обо мне говорят
                     .block-reviews.clearfix
@@ -52,4 +75,3 @@ html(lang="ru")
                     include teamplate/form-contacts
             include teamplate/footer
         include teamplate/_scripts
-
