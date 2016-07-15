@@ -7,13 +7,14 @@ html(lang="ru")
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         link(rel="stylesheet", href="bower-libs/normalize-css/normalize.css")
         link(rel="stylesheet", href="css/main.css")
+        link(rel="stylesheet", href="css/media.css")
     body
         .main-wrapper
             include teamplate/_mixin
             include teamplate/header-user
             .wrapper-content
                 .main-content.clearfix
-                    .portfolio-wrapper#portfolio-container
+                    .portfolio-wrapper.clearfix#portfolio-container
                         .portfolio__preview-block
                             .portfolio__preview-block__slide-container
                                 img(src="img/slider/preview/img_prev-1.png").portfolio__preview__image
@@ -29,32 +30,20 @@ html(lang="ru")
                                             i.icon-link
                                             | Посмотреть сайт
 
-                        .portfolio__thumbnail-wrapper
-                            .portfolio__thumbnail__control
-                                .list-thumb__wrap
-                                    ul.portfolio-list-thumb
-                                        li.portfolio-list-thumb__item
-                                            a(href="#").portfolio__thumbnail__link.slider__link-down
-                                                img(src="img/slider/thumbnail/img_thumb-1.png").portfolio__thumbnail-image.slider__thumbnail__next
-                                        li.portfolio-list-thumb__item
-                                            a(href="#").portfolio__thumbnail__link.slider__link-down
-                                                img(src="img/slider/thumbnail/img_thumb-1.png").portfolio__thumbnail-image.slider__thumbnail__next
-                                        li.portfolio-list-thumb__item
-                                            a(href="#").portfolio__thumbnail__link.slider__link-down
-                                                img(src="img/slider/thumbnail/img_thumb-1.png").portfolio__thumbnail-image.slider__thumbnail__next
-                            .portfolio__thumbnail__control
-                                .list-thumb__wrap
-                                    ul.portfolio-list-thumb
-                                        li.portfolio-list-thumb__item
-                                            a(href="#").portfolio__thumbnail__link.slider__link-up
-                                                img(src="img/slider/thumbnail/img_thumb-2.png").portfolio__thumbnail-image.slider__thumbnail__prev
-                                        li.portfolio-list-thumb__item
-                                            a(href="#").portfolio__thumbnail__link.slider__link-up
-                                                img(src="img/slider/thumbnail/img_thumb-2.png").portfolio__thumbnail-image.slider__thumbnail__prev
-                                        li.portfolio-list-thumb__item
-                                            a(href="#").portfolio__thumbnail__link.slider__link-up
-                                                img(src="img/slider/thumbnail/img_thumb-2.png").portfolio__thumbnail-image.slider__thumbnail__prev
-
+                        .portfolio__thumbnail
+                            .portfolio__thumbnail-wrapper
+                                .portfolio__thumbnail__control.thumbnail__left-control
+                                    .list-thumb__wrap
+                                        ul.portfolio-list-thumb
+                                            li.portfolio-list-thumb__item
+                                                a(href="#").portfolio__thumbnail__link.slider__link-down
+                                                    img(src="img/slider/thumbnail/work1.png").portfolio__thumbnail-image.slider__thumbnail__next
+                                .portfolio__thumbnail__control.thumbnail__right-control
+                                    .list-thumb__wrap
+                                        ul.portfolio-list-thumb
+                                            li.portfolio-list-thumb__item
+                                                a(href="#").portfolio__thumbnail__link.slider__link-up
+                                                    img(src="img/slider/thumbnail/img_thumb-2.png").portfolio__thumbnail-image.slider__thumbnail__prev
                 .bottom-content
                     .tittle-content.white-text Что обо мне говорят
                     .block-reviews.clearfix

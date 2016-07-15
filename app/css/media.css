@@ -1,15 +1,40 @@
+@charset "UTF-8";
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+  html {
+    font-size: 16px; }
   /**/ }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  html {
+    font-size: 14px; }
   /**/ }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  /**/
+  html {
+    font-size: 13px; }
+  /*==== Портфолио ====*/
+  .portfolio__preview-block {
+    display: block;
+    float: none;
+    width: 100%; }
+  .portfolio__description {
+    float: none;
+    position: relative;
+    height: auto;
+    width: 100%; }
+  .portfolio__thumbnail {
+    float: none;
+    height: 300px;
+    width: 100%; }
+  /*==== Блок отзывов ====*/
+  .block-reviews__column {
+    width: 100%;
+    float: none;
+    margin: 0 auto; }
   /*Disable Animation on Mobile Devices*/
   .animated {
     /*CSS transitions*/
@@ -25,10 +50,16 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  html {
+    font-size: 12px; }
+  .form-contact {
+    width: 320px; }
   /**/ }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
+  html {
+    font-size: 11px; }
   /**/ }
 
 /*==========  Mobile First Method  ==========*/

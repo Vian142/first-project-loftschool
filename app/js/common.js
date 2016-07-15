@@ -25,7 +25,6 @@ $(function() {
 		}
 	} catch(err) {
 	};
-
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 	
 });
@@ -45,7 +44,8 @@ $(document).ready(function() {
 	});
 
 	// Кнопка меню
-	$(".btn-sandwitch").click(function() {
+	$(".btn-sandwitch").click(function(e) {
+		e.preventDefault();
 	  $(".btn-sandwitch__toggle").toggleClass("active");
 	});
 	$(".nav-list__item__link").click(function(){
