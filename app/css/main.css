@@ -771,7 +771,10 @@ p {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease; }
   .portfolio__thumbnail__link:hover:after {
+<<<<<<< HEAD
     background-color: rgba(0, 0, 0, 0.2);
+=======
+>>>>>>> origin/master
     -webkit-box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.2);
             box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.2); }
 
