@@ -1,12 +1,15 @@
+/* Обертка навигации */
+.navigation
+
 /* Кнопка гамбургер */
 .btn-sandwitch
-	position: fixed
-	padding: 0
+	position: absolute
 	top: 25px
 	right: 15px
+	padding: 0
 	border: 0
 	background: none
-	z-index: 40
+	z-index: 140
 .btn-sandwitch__toggle
 	display: block
 	height: 45px
@@ -28,6 +31,7 @@
 	position: relative
 	display: block
 	margin: 0 auto
+	transition: all 0.5s ease
 .sw-top
 	top: 5px
 .sw-middle
@@ -55,7 +59,7 @@
 	position: absolute
 	padding: 0
 	margin: 0
-	top: 40%
+	top: 50%
 	left: 50%
 	transform: translate(-50%, -50%)
 .nav-list__item
