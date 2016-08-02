@@ -1,105 +1,121 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	html
-		font-size: 16px
-	/**/
-
+@media only screen and (max-width: 1200px)
+  html
+    font-size: 16px
+/**/
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	html
-		font-size: 14px
-	/**/
-
+@media only screen and (max-width: 992px)
+  html
+    font-size: 14px
+/**/
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	html
-		font-size: 13px
-	/*==== Портфолио ====*/
-	.portfolio__preview-block
-		display: block
-		float: none
-		width: 100%
-	.portfolio__description
-		float: none
-		position: relative
-		height: auto
-		width: 100%
-	.portfolio__thumbnail
-		float: none
-		height: 300px
-		width: 100%
+@media only screen and (max-width: 768px)
+  html
+    font-size: 13px
+  /*==== Портфолио ====*/
+  .portfolio__preview-block
+    display: block
+    float: none
+    width: 100%
+  .portfolio__description
+    float: none
+    position: relative
+    height: auto
+    width: 100%
+  .portfolio__thumbnail
+    float: none
+    height: 300px
+    width: 100%
+  .footer__columns-block
+    flex-wrap: wrap
+  .footer__column
+    border-left: none
+    margin: 0
+  .footer__column:nth-child(1)
+    flex-basis: 100%
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2)
+    text-align: center
+  .footer__column:nth-child(2)
+    flex-basis: 60%
+  .footer__column:nth-child(3)
+    flex-basis: 36%
+    text-align: right
 
-	/*==== Блок отзывов ====*/
-	.block-reviews__column
-		width: 100%
-		float: none
-		margin: 0 auto
-
-	/*Disable Animation on Mobile Devices*/
-	.animated
-		/*CSS transitions*/
-		-o-transition-property: none !important
-		-moz-transition-property: none !important
-		-ms-transition-property: none !important
-		-webkit-transition-property: none !important
-		transition-property: none !important
-		/*CSS transforms*/
-		-o-transform: none !important
-		-moz-transform: none !important
-		-ms-transform: none !important
-		-webkit-transform: none !important
-		transform: none !important
-		/*CSS animations*/
-		-webkit-animation: none !important
-		-moz-animation: none !important
-		-o-animation: none !important
-		-ms-animation: none !important
-		animation: none !important
-
+  /*Disable Animation on Mobile Devices*/
+  .animated
+    /*CSS transitions*/
+    -o-transition-property: none !important
+    -moz-transition-property: none !important
+    -ms-transition-property: none !important
+    -webkit-transition-property: none !important
+    transition-property: none !important
+    /*CSS transforms*/
+    -o-transform: none !important
+    -moz-transform: none !important
+    -ms-transform: none !important
+    -webkit-transform: none !important
+    transform: none !important
+    /*CSS animations*/
+    -webkit-animation: none !important
+    -moz-animation: none !important
+    -o-animation: none !important
+    -ms-animation: none !important
+    animation: none !important
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	html
-		font-size: 12px
-	.form-contact
-		width: 320px
-	/**/
+@media only screen and (max-width: 480px)
+  html
+    font-size: 12px
+  .block-reviews
+    flex-wrap: wrap
+    justify-content: flex-start
+  .block-reviews__column
+    flex-basis: 100%
+  .footer__column:nth-child(2)
+    flex-basis: 100%
+    text-align: center
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2)
+  .footer__column:nth-child(3)
+    flex-basis: 100%
+    text-align: center
+  .b-menu__list
+    text-align: center
+  .b-menu__item
+    margin: 0
+    padding: 0
 
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	html
-		font-size: 11px
-
-	/**/
+  /* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+  html
+    font-size: 11px
 
 
 /*==========  Mobile First Method  ==========*/
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
+  /* Custom, iPhone Retina */
+@media only screen and (min-width: 320px)
+  /**/
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
+@media only screen and (min-width: 480px)
+  /**/
 
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
+  /* Small Devices, Tablets */
+@media only screen and (min-width: 768px)
+  /**/
 
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
+  /* Medium Devices, Desktops */
+@media only screen and (min-width: 992px)
+  /**/
 
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
+  /* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px)
+  /**/
