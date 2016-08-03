@@ -1,45 +1,84 @@
 .content-blog
 	background-color: #faf8f0
 	padding: 40px 0
+	display: flex
+	flex-wrap: nowrap
 
 .sidebar
-	float: left
-	width: 25%
 	min-height: 200px
 	padding: 10px 20px
+	flex: 1 1 30%
+	display: flex
+	justify-content: flex-end
 
+.wrapper-list-post
+	transition: all 1s ease
+
+.list-post-btn
+	display: none
+	position: absolute
+	width: 50px
+	height: 50px
+	-webkit-border-radius: 50%
+	border-radius: 50%
+	background-color: #253468
+	right: 0
+	top: 50%
+	-webkit-transform: translate(0, -50%)
+	transform: translate(0, -50%)
+	margin-right: -20px
+	cursor: pointer
 .list-post
 	margin: 0
-	padding: 10px 10px 0 50px
-	max-width: 380px
+	padding: 10px 10px 0 10px
+	max-width: 400px
+.list-post.not-fixed
+	position: relative
+
+.list-post.fixed
+	position: fixed
+	top: 0
+	left: 6vw
+	width: 25%
+	z-index: 150
+
 .list-post__item
+	font-size: 1rem
 	text-align: right
 	list-style: none
 	border-right: 3px solid rgba(255,255,255, 0.01)
 	min-height: 43px
 	margin-bottom: 10px
-	padding: 5px 18px 5px 40px
+	padding: 5px 18px 5px 5px
+
 .list-post__item:hover
 	cursor: pointer
+	color: rgb(8, 60, 150)
 	border-color: rgb(5, 72, 190)
+	& .list-post__item__link
+
+
+.list-post__item.active
+	border-color: rgb(5, 72, 190)
+	& .list-post__item__link
+		font-weight: bold
+		color: rgb(8, 60, 150)
+
 
 .list-post__item__link
-	font-size: 16px
+	font-size: 1rem
 	font-family: "Roboto"
-	color: rgb(69, 90, 100)
-	font-weight: bold
 	line-height: 1.625
+	text-decoration: none
 	vertical-align: middle
+	color: rgb(69, 90, 100)
+
 .list-post__item__link:hover
-	color: rgb(8, 60, 150)
-/*  */
 
 .section-posts
-	width: 73.5%
-	float: right
-	padding-right: 400px
+	flex: 1 1 70%
+	padding-right: 150px
 	padding-left: 30px
-
 .post
 	padding: 10px 0 30px 0
 	margin: 10px 0 30px 0
@@ -48,13 +87,13 @@
 		border-bottom: none
 
 .title-post
-	font-size: 35px
+	font-size: 2.1rem
 	font-family: "SansusWebissimo"
 	color: rgb(69, 90, 100)
 	line-height: 1.171em
 	margin: 10px 0
 .data-post
-	font-size: 16px
+	font-size: 1rem
 	font-family: 'Roboto'
 	color: rgba(8, 60, 150, 0.702)
 	line-height: 2.5em
@@ -63,10 +102,9 @@
 .post-content
 
 p
-  font-size: 16px
+  font-size: 1rem
   font-family: "Roboto"
   color: rgb(69, 90, 100)
   line-height: 1.625em
   text-align: left
   margin: 9px 0
-

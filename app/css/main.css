@@ -145,7 +145,7 @@ body {
   font-family: "RobotoRegular", sans-serif;
   font-weight: normal;
   font-size: 14px;
-  min-width: 320px;
+  min-width: 340px;
   position: relative;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -527,47 +527,100 @@ p {
 
 .content-blog {
   background-color: #faf8f0;
-  padding: 40px 0; }
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
 
 .sidebar {
-  float: left;
-  width: 25%;
   min-height: 200px;
-  padding: 10px 20px; }
+  padding: 10px 20px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 30%;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.wrapper-list-post {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.list-post-btn {
+  display: none;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #253468;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+  margin-right: -20px;
+  cursor: pointer; }
 
 .list-post {
   margin: 0;
-  padding: 10px 10px 0 50px;
-  max-width: 380px; }
+  padding: 10px 10px 0 10px;
+  max-width: 400px; }
+
+.list-post.not-fixed {
+  position: relative; }
+
+.list-post.fixed {
+  position: fixed;
+  top: 0;
+  left: 6vw;
+  width: 25%;
+  z-index: 150; }
 
 .list-post__item {
+  font-size: 1rem;
   text-align: right;
   list-style: none;
   border-right: 3px solid rgba(255, 255, 255, 0.01);
   min-height: 43px;
   margin-bottom: 10px;
-  padding: 5px 18px 5px 40px; }
+  padding: 5px 18px 5px 5px; }
 
 .list-post__item:hover {
   cursor: pointer;
+  color: #083c96;
   border-color: #0548be; }
 
+.list-post__item.active {
+  border-color: #0548be; }
+  .list-post__item.active .list-post__item__link {
+    font-weight: bold;
+    color: #083c96; }
+
 .list-post__item__link {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "Roboto";
-  color: #455a64;
-  font-weight: bold;
   line-height: 1.625;
-  vertical-align: middle; }
+  text-decoration: none;
+  vertical-align: middle;
+  color: #455a64; }
 
-.list-post__item__link:hover {
-  color: #083c96; }
-
-/*  */
 .section-posts {
-  width: 73.5%;
-  float: right;
-  padding-right: 400px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 70%;
+      -ms-flex: 1 1 70%;
+          flex: 1 1 70%;
+  padding-right: 150px;
   padding-left: 30px; }
 
 .post {
@@ -578,21 +631,21 @@ p {
     border-bottom: none; }
 
 .title-post {
-  font-size: 35px;
+  font-size: 2.1rem;
   font-family: "SansusWebissimo";
   color: #455a64;
   line-height: 1.171em;
   margin: 10px 0; }
 
 .data-post {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: 'Roboto';
   color: rgba(8, 60, 150, 0.702);
   line-height: 2.5em;
   text-align: left; }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "Roboto";
   color: #455a64;
   line-height: 1.625em;
@@ -771,12 +824,7 @@ p {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease; }
   .portfolio__thumbnail__link:hover:after {
-<<<<<<< HEAD
-    background-color: rgba(0, 0, 0, 0.2);
-=======
->>>>>>> origin/master
-    -webkit-box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.2);
-            box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.2); }
+    background-color: rgba(0, 0, 0, 0.2); }
 
 .slider__link-up:after {
   -webkit-transform: rotate(180deg);
@@ -798,11 +846,22 @@ p {
 /* Блок отзывов */
 .block-reviews {
   padding: 25px 10px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .block-reviews__column {
-  width: 360px;
-  float: left;
+  max-width: 380px;
+    max-width-flex: 1 1 auto;
   padding: 20px 10px 0 10px; }
 
 /* Фото автора */
@@ -837,22 +896,35 @@ p {
 
 .form-contact {
   background-color: rgba(0, 0, 0, 0.2);
-  height: 440px;
-  width: 380px;
+  min-height: 440px;
+  min-width: 310px;
+  max-width: 380px;
   margin: 10px auto;
   padding: 30px 0 0 0; }
+
+.title-form {
+  font-size: 2rem;
+  font-family: "SansusWebissimo";
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 2.6rem;
+  text-align: center;
+  margin: 15px auto; }
 
 .f-input {
   background-color: rgba(255, 255, 255, 0.2);
   border: none;
-  margin: 17px 23px 4px 23px;
-  width: 340px;
+  width: 100%;
+  max-width: 100%;
   height: 45px;
   font-size: 1rem;
   font-family: "Roboto";
   color: rgba(255, 255, 255, 0.502);
   line-height: 2rem;
   padding: 13px 16px; }
+
+.form-contact__container__input {
+  padding: 17px 23px 4px 23px; }
 
 .f-input-textarea {
   height: 130px;
@@ -861,13 +933,26 @@ p {
   padding: 7px 16px; }
 
 .form-contact__container__controls {
-  padding-top: 10px; }
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
+
+.form-contact__controls-button {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%; }
 
 .f-button {
   color: rgba(255, 255, 255, 0.502);
   background-color: rgba(255, 255, 255, 0.01);
   border: none;
-  width: 190px;
+  width: 100%;
   height: 45px;
   float: left;
   font-size: 16px;
@@ -1218,7 +1303,8 @@ p {
 .footer__column {
   vertical-align: top;
   width: 30%;
-  padding: 0 10px;
+  min-height: 63px;
+  padding: 15px 10px;
   margin: 0 1.5%;
   border-left: 2px solid rgba(255, 255, 255, 0.2); }
   .footer__column:first-child {
