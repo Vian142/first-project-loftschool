@@ -8,6 +8,21 @@
 @media only screen and (max-width: 1200px) {
   html {
     font-size: 16px; }
+  .left-side {
+    -webkit-align-content: flex-start;
+        -ms-flex-line-pack: start;
+            align-content: flex-start;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .top-content-block {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; }
+  .middle-content-block {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; }
   .wrapper-content::before {
     height: 125px;
     top: -125px; }
@@ -28,6 +43,46 @@
 @media only screen and (max-width: 768px) {
   html {
     font-size: 13px; }
+  .main-content {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: red; }
+  .left-side {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    background-color: #f2f0e8;
+    padding-bottom: 25px; }
+  .wrap-content-left {
+    max-width: 470px;
+    margin: 0 auto;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .wrap-content-right {
+    max-width: 470px;
+    margin: 0 auto; }
+  .right-side {
+    padding-top: 50px;
+    background-color: #f4f5f0;
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; }
+  /*Диаграммы*/
+  .diagram-title {
+    text-align: center; }
+  .diagram-list {
+    text-align: center;
+    margin: 5px 10px 20px 10px; }
   .wrapper-content::before {
     height: 95px;
     top: -95px; }
@@ -86,6 +141,21 @@
 @media only screen and (max-width: 480px) {
   html {
     font-size: 12px; }
+    html .area-content {
+      padding: 0; }
+    html p {
+      padding: 0 10px; }
+    html .contacts-popup {
+      position: relative;
+      top: 0;
+      left: 0;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+    html .contacts-popup__list__item {
+      width: 100%; }
   .sidebar {
     -webkit-flex-basis: 0;
         -ms-flex-preferred-size: 0;

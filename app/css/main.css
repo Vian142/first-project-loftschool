@@ -186,7 +186,7 @@ p {
   padding: 0;
   border: 0;
   background: none;
-  z-index: 140; }
+  z-index: 160; }
 
 .btn-sandwitch__toggle {
   display: block;
@@ -233,7 +233,7 @@ p {
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 30; }
+  z-index: 140; }
 
 .main-nav {
   position: fixed;
@@ -314,7 +314,20 @@ p {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
+          transform: translate(-50%, -50%);
+  z-index: 120; }
+  .header-info:before {
+    content: '';
+    display: block;
+    background-image: url("../img/icons/stars1.svg");
+    background-position: center top;
+    background-size: 95%;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    z-index: -120; }
 
 .header-info__avatar {
   width: 141px;
@@ -416,7 +429,14 @@ p {
 /* Разбиение на колонки */
 .main-content {
   background-color: #f2f0e8;
-  width: 100%; }
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
 
 .area-content {
   position: relative;
@@ -426,28 +446,47 @@ p {
   min-height: 380px; }
 
 .left-side {
-  width: 50%;
-  float: left;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #f2f0e8;
   padding-top: 10px; }
 
 .right-side {
-  width: 50%;
-  float: left;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
   background-color: #eae8e2;
   padding-top: 10px; }
 
 /* Левая колонка на две */
 .top-content-block {
-  width: 50%;
-  float: left; }
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%; }
 
 .middle-content-block {
-  width: 50%;
-  float: left; }
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%; }
 
-/* Верхний блок */
-/* Средний блок */
+.wrap-content-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
+
 .middle-block__wrap {
   padding: 0 20px;
   margin: 0 auto; }
@@ -466,7 +505,7 @@ p {
 
 /* Заголовки */
 .tittle-content {
-  font-size: 62px;
+  font-size: 3.8rem;
   font-family: "SansusWebissimo";
     font-family-color: #373e42;
   text-transform: uppercase;
@@ -500,6 +539,14 @@ p {
 
 .img-content {
   width: 70%; }
+
+.photo-container {
+  max-width: 700px; }
+
+.photo-container__img {
+  max-width: 100%;
+  width: 100%;
+  margin: auto; }
 
 /* Карта */
 .map {
@@ -1229,7 +1276,8 @@ p {
   padding: 10px 20px 10px 20px;
   background-color: rgba(255, 255, 255, 0.7);
   -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2); }
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  z-index: 120; }
 
 .title-popup {
   font-size: 35px;

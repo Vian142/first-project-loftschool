@@ -13,26 +13,28 @@ html(lang="ru")
             include teamplate/_mixin
             include teamplate/header-user
             .wrapper-content.about
-                .main-content.clearfix
+                .main-content
                     .left-side.area-content
-                        .top-content-block
-                            h2.tittle-content Обо мне
-                        .middle-content-block
-                            img(src="img/userfiles/photo.jpg", class="photo_content", alt="Фото Иван Попов")
-                            h3.tittle-h3.bottom-line
-                                | Кто я
-                            p.
-                                Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтом и приложений. Мне нравится делать интересные и современные проекты.
-                            P.
-                                Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+                        .wrap-content-left
+                            .top-content-block
+                                h2.tittle-content Обо мне
+                            .middle-content-block
+                                .photo-container
+                                    img(src="img/userfiles/photo.jpg", class="photo-container__img", alt="Фото Иван Попов")
+                                h3.tittle-h3.bottom-line
+                                    | Кто я
+                                p.
+                                    Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтом и приложений. Мне нравится делать интересные и современные проекты.
+                                P.
+                                    Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
                     .right-side.area-content
-                        h3.tittle-h3.bottom-line
-                            |Чем я могу быть <br> вам полезен
-                        p.
-                            Больше всего меня привлекает Frontend разработка, но так же могу решать и другие задачи
+                        .wrap-content-right
+                            h3.tittle-h3.bottom-line
+                                |Чем я могу быть <br> вам полезен
+                            p.
+                                Больше всего меня привлекает Frontend разработка, но так же могу решать и другие задачи
                         include teamplate/diagram
             include teamplate/map
-                include teamplate/popup-contacts
             include teamplate/footer
         include teamplate/_scripts
         script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDGyS4Ch28czN3_lOLTbxsxzDGeoNFjVJQ&sensor=false&extension=.js')

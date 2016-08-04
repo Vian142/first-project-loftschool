@@ -2,36 +2,32 @@
 .main-content
 	background-color: #f2f0e8
 	width: 100%
+	display: flex
+	flex-wrap: nowrap
 .area-content
 	position: relative
 	padding: 0 38px
 	box-sizing: border-box
 	min-height: 380px
 .left-side
-	width: 50%
-	float: left
+	flex: 1 1 50%
+	justify-content: center
 	background-color: #f2f0e8
 	padding-top: 10px
 .right-side
-	width: 50%
-	float: left
+	flex: 1 1 50%
 	background-color: #eae8e2
 	padding-top: 10px
 
-
 /* Левая колонка на две */
 .top-content-block
-	width: 50%
-	float: left
+	flex: 1 1 50%
 .middle-content-block
-	width: 50%
-	float: left
+	flex: 1 1 50%
 
-
-/* Верхний блок */
-.top-content-block
-/* Средний блок */
-.middle-block
+.wrap-content-left
+	display: flex
+	flex-wrap: nowrap
 .middle-block__wrap
 	padding: 0 20px
 	margin: 0 auto
@@ -51,7 +47,7 @@
 
 /* Заголовки */
 .tittle-content
-	font-size: 62px
+	font-size: 3.8rem
 	font-family: 'SansusWebissimo'
  	color: rgb(55, 62, 66)
 	text-transform: uppercase
@@ -83,11 +79,14 @@
 	color: rgb(255,255,255)
 
 
-
 .img-content
 	width: 70%
-.photo-content
-
+.photo-container
+	max-width: 700px
+.photo-container__img
+	max-width: 100%
+	width: 100%
+	margin: auto
 
 /* Карта */
 .map
